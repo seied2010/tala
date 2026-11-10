@@ -1,0 +1,1 @@
+((api)=>{for(const [setting,variable] of [['gc_accent','--brand-accent'],['gc_background','--brand-paper']])api(setting,value=>value.bind(next=>document.documentElement.style.setProperty(variable,next)));})(wp.customize);

@@ -1,2 +1,26 @@
 # tala
 پروژه سایت فروش طلا — اختیاری
+
+## دریافت نسخه ۱.۱.۰
+
+- [بسته کامل: ZIPهای نصب، سورس، مستندات و آزمون‌ها](https://github.com/seied2010/tala/raw/refs/heads/main/Gold-Commerce-1.1.0-complete-delivery.zip)
+- [قالب](https://github.com/seied2010/tala/raw/refs/heads/main/gold-commerce-theme-1.1.0.zip)
+- [هسته](https://github.com/seied2010/tala/raw/refs/heads/main/gold-commerce-core-1.1.0.zip)
+- [اتصال آگاه — MOCK_ONLY](https://github.com/seied2010/tala/raw/refs/heads/main/gold-agah-connector-1.1.0.zip)
+- [راهنمای نصب](docs/INSTALL.md) · [گزارش آزمون و محدودیت بار](docs/TEST_REPORT.md) · [هش‌ها](SHA256SUMS.txt)
+
+اتصال آگاه فقط شبیه‌سازی شده است؛ درگاه آزمایشی وجهی جابه‌جا نمی‌کند. فایل و کد اصلی حسابداری آگاه در این مخزن نیستند. ورودی‌های واقعی و محدودیت سناریوی ترکیبی ۱۰۰۰ کاربر در مستندات مشخص‌اند.
+
+# Gold Commerce 1.1.0
+
+قالب و افزونه‌های مستقل WordPress + WooCommerce مطابق بسته مشخصات ۱٫۱؛ فروشگاه‌ها نصب و داده مستقل دارند. فایل حسابداری آگاه فقط بررسی ایستا شده، تغییر نکرده و در این تحویل نیست.
+
+* نصب: `docs/INSTALL.md` — سه ZIP نصب‌شدنی در ریشهٔ بسته تحویل.
+* راهنمای فارسی: `docs/USER_GUIDE_FA.md`.
+* تنظیمات و معماری: `docs/CONFIGURATION.md`، `docs/TECHNICAL_ARCHITECTURE.md`.
+* آزمون‌ها و نگاشت نیازمندی: `docs/TEST_REPORT.md`، `docs/REQUIREMENTS_TRACEABILITY.md` و فایل‌های ساختاریافتهٔ `evidence/`.
+* ورودی‌های واقعی و محدودیت‌ها: `docs/INPUTS_NEEDED.md`، `docs/KNOWN_LIMITATIONS.md`.
+
+هستهٔ مالی در افزونه است و قالب مسئول نمایش است. مسیر پرداخت آزموده‌شده، کلاسیک Woo است. تبدیل صفحات موجود، تأیید مدیر می‌خواهد. دادهٔ نمونه فقط با اجرای عمدی fixture ساخته می‌شود. درگاه تست هیچ وجهی منتقل نمی‌کند و در production غیرفعال است. اتصال آگاه **MOCK_ONLY** است و فروش متکی به رزرو واقعی آگاه مسدود می‌ماند.
+
+تست‌ها را روی فروشگاه واقعی اجرا نکنید. `tests/` و `fixtures/` دادهٔ ساختگی ایجاد می‌کنند و `load-adapter.php` فقط برای محیط local با secret تست است؛ آن را روی production نصب نکنید. ابزار بسته‌بندی `python3 tools/package.py` ZIPها و manifest را بدون runtime/credential و بدون کد آگاه می‌سازد. هیچ ساخت فرانت‌اند یا CDN فونت برای نصب لازم نیست.

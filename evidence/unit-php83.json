@@ -1,0 +1,62 @@
+{
+    "suite": "unit",
+    "php": "8.3.36",
+    "at_utc": "2026-11-10T14:01:27+00:00",
+    "results": [
+        {
+            "test": "T01.exact_breakdown",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T02.per_gram_and_percent",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T03.stone_net_weight",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T04.coin_direct",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "FINAL.manual_final_never_retaxed",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T05.units_and_purity",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T06.tax_component_discount",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T08.stale_and_future_rate",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T10.invalid_inputs",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "DECIMAL.big_intermediates",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "DECIMAL.deterministic_fuzz",
+            "status": "PASS",
+            "ms": 200
+        }
+    ]
+}

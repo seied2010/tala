@@ -1,0 +1,34 @@
+{
+  "test": "OPS.restore_drill",
+  "status": "PASS",
+  "at_utc": "2026-11-10T14:06:26.677168+00:00",
+  "source": "isolated synthetic shop 2 database",
+  "destination": "separate gold_restore database, no live egress",
+  "duration_s": 2.166,
+  "counts_source": {
+    "wp_gc_quotes": 175,
+    "wp_gc_payment_receipts": 64,
+    "wp_wc_orders": 193,
+    "wp_wc_order_addresses": 189,
+    "wp_gc_integration_outbox": 14,
+    "wp_gc_external_mapping": 7
+  },
+  "counts_restored": {
+    "wp_gc_quotes": 175,
+    "wp_gc_payment_receipts": 64,
+    "wp_wc_orders": 193,
+    "wp_wc_order_addresses": 189,
+    "wp_gc_integration_outbox": 14,
+    "wp_gc_external_mapping": 7
+  },
+  "quote_snapshot_digest": "c4734be1ad6d4126041759c9133c301e7860b44889b6640c56c85ed8f5cddd1e",
+  "checks": [
+    "consistent SQL export",
+    "import into independent database",
+    "financial and HPOS row counts",
+    "quote amount/status/snapshot digest",
+    "application-file ZIP extraction and per-file SHA256 equality"
+  ],
+  "scope": "Local database restore, not a production-host filesystem or offsite disaster-recovery certification.",
+  "restored_application_files": 120
+}

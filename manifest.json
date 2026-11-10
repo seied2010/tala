@@ -1,0 +1,894 @@
+{
+  "product": "Gold Commerce",
+  "version": "1.1.0",
+  "specification": "Gold-Commerce-Development-Package-v1.1",
+  "packages": [
+    {
+      "file": "gold-commerce-theme-1.1.0.zip",
+      "bytes": 23050,
+      "sha256": "d1437aeab0c12f0be24ceff5e7b93cf92386a871017ea62736459b4eb8baf0fe"
+    },
+    {
+      "file": "gold-commerce-core-1.1.0.zip",
+      "bytes": 4587352,
+      "sha256": "b355ffe255172682c72ede9ba96d28881d181fd94f8cc8ec6fe458e6cf44dff8"
+    },
+    {
+      "file": "gold-agah-connector-1.1.0.zip",
+      "bytes": 14637,
+      "sha256": "786325ee994439ecaf1e29dc3f3a3cbb584b0c24f0cc3e3d2762e33782b7e96b"
+    }
+  ],
+  "files": [
+    {
+      "file": "source/gold-agah-connector/LICENSE.txt",
+      "sha256": "dec703cdb49042ca367f71c3982dee4552ffef395225f1fe9f14d29a4a0cb0ff"
+    },
+    {
+      "file": "source/gold-agah-connector/gold-agah-connector.php",
+      "sha256": "fd52ec00e753017e512f210190bc943eecd32c6e805f54888a6af07b2f9f0837"
+    },
+    {
+      "file": "source/gold-commerce-theme/header.php",
+      "sha256": "fbc19c54a141ebf6a72fcb78de62cc618c166b1faaf77fc039c51a6df526134b"
+    },
+    {
+      "file": "source/gold-commerce-theme/style.css",
+      "sha256": "a91c71ed4b8a7b517569489729bb20259621b5a43d7d77bc97478d97a937161c"
+    },
+    {
+      "file": "source/gold-commerce-theme/woocommerce.php",
+      "sha256": "312fff388725001bdc9c9124092e8a8a2824c81667bb8da6b66f6183a317f501"
+    },
+    {
+      "file": "source/gold-commerce-theme/functions.php",
+      "sha256": "7bcd8cd255df826be8ea56c5079ac5e51215e61acf5c61363920b9f9e2553184"
+    },
+    {
+      "file": "source/gold-commerce-theme/page.php",
+      "sha256": "667545eee75365b7e51a3e497876efa59b1b7302eb752e70df029ae20c55f40b"
+    },
+    {
+      "file": "source/gold-commerce-theme/index.php",
+      "sha256": "5d523ad0fc34e8d0786a266a21d6130ebacebbd386187004a0ef2a4948143e88"
+    },
+    {
+      "file": "source/gold-commerce-theme/404.php",
+      "sha256": "fb0be5727142560bf3db3281a5528a8d3a2d90cd787bd213f674d48451b86cef"
+    },
+    {
+      "file": "source/gold-commerce-theme/LICENSE.txt",
+      "sha256": "dec703cdb49042ca367f71c3982dee4552ffef395225f1fe9f14d29a4a0cb0ff"
+    },
+    {
+      "file": "source/gold-commerce-theme/footer.php",
+      "sha256": "3cafb0b6c14a8a3647c9a92adbf8106141d79f677cbff39031576f4ec7b44b37"
+    },
+    {
+      "file": "source/gold-commerce-theme/front-page.php",
+      "sha256": "3943ba1e0f6ad5b176d81ad80cba167172de8953d4516c1d345713571e0fbc99"
+    },
+    {
+      "file": "source/gold-commerce-core/gold-commerce-core.php",
+      "sha256": "27fea21906ec511c167b27c6d0ca16b067ee6a4881c839ea0eaeccc9f002dc0e"
+    },
+    {
+      "file": "source/gold-commerce-core/LICENSE.txt",
+      "sha256": "dec703cdb49042ca367f71c3982dee4552ffef395225f1fe9f14d29a4a0cb0ff"
+    },
+    {
+      "file": "source/gold-agah-connector/src/Connector.php",
+      "sha256": "52a680fb34181fa5756c51ba1cc62e08203b487e8636e5b84ee249814d4f845c"
+    },
+    {
+      "file": "source/gold-agah-connector/src/MockProvider.php",
+      "sha256": "710d970e7a1285d74c809841203bc653b2eea133cf510c2ad7a8c4eff404911c"
+    },
+    {
+      "file": "source/gold-commerce-theme/assets/customizer.js",
+      "sha256": "a818ffdde0aed4757e2588608659d496a0ff0a794726c616d1242701e3604a55"
+    },
+    {
+      "file": "source/gold-commerce-theme/assets/theme.js",
+      "sha256": "42693e37b7673a332e4e9cd8506d910662c39a0e6742e3f1ec0f9a4021932a70"
+    },
+    {
+      "file": "source/gold-commerce-theme/assets/jewel.svg",
+      "sha256": "cc4a51cd744c73502225a3c0628cfce06e9dc43ee6e6b68bafa11e4a60a8bb1e"
+    },
+    {
+      "file": "source/gold-commerce-theme/assets/theme.css",
+      "sha256": "24f88f3fe6ae93fbb03dcff158aa4b5f992dc39a0862b1b21d46f1b7ee050355"
+    },
+    {
+      "file": "source/gold-commerce-theme/assets/accessibility.css",
+      "sha256": "baaec4a1b9ab1d99513e543ea3e49308051fb0f564734e16bffcf232de921638"
+    },
+    {
+      "file": "source/gold-commerce-core/guards/gold-commerce-guard.php",
+      "sha256": "30d31a75cc061ea49fe22ab1bd1a2506fcf56cbce21e23c1f088e1060a9fa86c"
+    },
+    {
+      "file": "source/gold-commerce-core/assets/customer.js",
+      "sha256": "c6f5c31c12f950d1dcbe2ff79424e8249f4c0b5c6a6e4282074eec9fc12db91a"
+    },
+    {
+      "file": "source/gold-commerce-core/assets/customer.css",
+      "sha256": "28b5a15d2d5abf6607011ab065a7ea26d943fb2d64b3abd354d3f500221058c2"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Notifications.php",
+      "sha256": "3ee47e3ed99c7fc5f9b26daae6ba594dde9911ee56e4bfa6863f5596a01a5c04"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Rest.php",
+      "sha256": "dde21f3e5011048ba7ea3f0b54f35a867257e1dd7f6e281511fc3f06bb90e3a8"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Quotes.php",
+      "sha256": "b8536459902285876a32e61af38c17c9bd7eb9b443dc167a70359673c02d80d9"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Stock.php",
+      "sha256": "ea87c3180db0cc04e28f949db5892fdf74a94990f0ccd8d3f2c47ef29be273f2"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Admin.php",
+      "sha256": "0901136350159248ad8ccd71d86d216c3fae3dcea07eb5fb98d75829bae8bac2"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Database.php",
+      "sha256": "a3e563554bc616a6b5e129582d32f401e20ebdaf302637f7ed5c8e3287b24a81"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Catalog.php",
+      "sha256": "b9481fd443efb78cc2418184e611bde2309af14ffb7d987724dc3260aa0acf41"
+    },
+    {
+      "file": "source/gold-commerce-core/src/ClassicCheckout.php",
+      "sha256": "2358b430703c7b601d764717f5bc329c0755c53d7ab0043a0c9ffe00a6d66184"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Plugin.php",
+      "sha256": "69714564ed90dc76a42e6c8cbff080f2f5b8b82ba00f182f399329caef0eb154"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Reports.php",
+      "sha256": "78b77f3e4735397cf0f2bc80a111693dcd8913959d44ec9e91e9b6f6d8ee3bd9"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Privacy.php",
+      "sha256": "9455dd8fff06e8f3d5354afd88a0f3f52367c1ecf317f3e1de2e2a32dacc3b62"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Translations.php",
+      "sha256": "39dda00d01aaace91076f184cda29d53339ca7e0b845ad981430495ce7aa6cc5"
+    },
+    {
+      "file": "source/gold-commerce-core/src/TestGateway.php",
+      "sha256": "b4edc0fecab7a9ee7673d72bbb44087ab5d07ddb6c9e83574de57e817e081fd9"
+    },
+    {
+      "file": "source/gold-commerce-core/src/NotificationChannel.php",
+      "sha256": "15b6c37ea4bf673dea3ddb7a452c5e971d141578793b55f0312506a4baa243dd"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Pricing.php",
+      "sha256": "28f98801b1fe8aedcf665f34199569a185c65fcf6f21b0a2d5d001989e31d143"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Cache.php",
+      "sha256": "294bcee7c159666178a7866f530f74eed42ee980bd3e18e29cbee74ab87d990b"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Customer.php",
+      "sha256": "9e4b9171931436c2ca7efe20b60c48141888715302472d56718158fd9cdf2d78"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Rates.php",
+      "sha256": "039d1bbe8db575c226574455820045b11366215b53e0593fe6f735468d05a01c"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Decimal.php",
+      "sha256": "9a875676815acb47e4a3b2f6c723ec0fc3b6c4a41b658ef5f6a6c2ba77252eef"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/CHANGELOG.TXT",
+      "sha256": "f9d3b54b1a4dcdaf039966763c384f29527f51ea7f634127f959a32b433a3823"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/tcpdf_autoconfig.php",
+      "sha256": "09223073deececec07da66c8023d5a4abde122ddeb5f7d54459e3f48fe8860aa"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/VERSION",
+      "sha256": "9c62e7974d9910d8a9def0dba4bc1a1a667f4c0aedc0ca689d2320acdaa06c04"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/tcpdf_barcodes_2d.php",
+      "sha256": "8a9b698a47a5eb3ec89a8ab0a4e06fc7614a4938efe070e5f17891d9372f582a"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/tcpdf_barcodes_1d.php",
+      "sha256": "ba1372e526ef42c014f104b2058603a8d4d29b8170b7abcfc13ecb77a43bc298"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/composer.json",
+      "sha256": "b0b14292ce4e157286aab66a3b92ab5c878ed024cd5bb976d3698eacd3ad608e"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/README.md",
+      "sha256": "12f2bf18dfffe70be4c6745e8cefeff980c0e9d773d4fd545237cf9531427d36"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/LICENSE.TXT",
+      "sha256": "2c725cb55ac7aa4d78fcaecd3e8c67e71d2124ee1bf253c2335bcc71310a133a"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/tcpdf.php",
+      "sha256": "7dba861e596450737c0c63e006b07e1995f0be4754755c32efe54f6712fbebe7"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/config/tcpdf_config.php",
+      "sha256": "d2338da70efe688314c931c437577526c50582223ab84621e81b9f9648d42c39"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusans.z",
+      "sha256": "0b911bc136718959ad0c6e175537dcd3f4c91d1765ddb2c36427af3b50f4a7e1"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansextralight.z",
+      "sha256": "21e2cd9f90458470dc1ec3c083122a4599fa00a5235e8835a9142891a4234579"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/helvetica.php",
+      "sha256": "d00f610d79e7b3d62831f5b280c3d67fba6dd27e3d8e731c5e08c9997274515c"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansb.ctg.z",
+      "sha256": "a640299ef8dab84c25c558c71c8608625c9f762edd3cf305a4716d13a5b68de9"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansbi.php",
+      "sha256": "9d82085d91dfdae0974850f0a1f814f5f9b93fed150986d007fa5ea78030a312"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensed.z",
+      "sha256": "c1ccfc02d15d9904bcaf30e097fd6b6c33e47da64bc69f37ab0d7b436ffc8ee0"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonoi.php",
+      "sha256": "0024890b61464689936b1f77576dbc25d95ac42abba980a707bb354f5eed7f91"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/helveticab.php",
+      "sha256": "da221bac61a548428591037e865f42adde25330fd6767870b233716ddd0bd795"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedb.ctg.z",
+      "sha256": "a640299ef8dab84c25c558c71c8608625c9f762edd3cf305a4716d13a5b68de9"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedi.php",
+      "sha256": "9440dea9a56334564b1d87f480c9e80339413775a4bfed30d27059b3531f5a03"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansi.ctg.z",
+      "sha256": "301d861615d72ee46a2b9c295453c72ffe00f0dfc0a32964fae6b5e2c8e3c8e2"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansb.z",
+      "sha256": "18c349b1f422d5b3764a8706949af3306f01baa5b74b8660260a7fa140b2a974"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedb.z",
+      "sha256": "e1391bd4362e15a9277c0b27952b0dc6f6f44cfa644e1d924a58e4b60776565f"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansbi.ctg.z",
+      "sha256": "2a17981112ac3fa2498af66d872f0eed9a0ee3049cdf95f648e6fc23a93a3b16"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmono.z",
+      "sha256": "367e500a616149efaf6faaf269aacf15d7d6cce9688558a5a6c8b83449acbeca"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansextralight.ctg.z",
+      "sha256": "e95749311e3430d72aca89d05f65663a60d55035a5788b28e120bbd0bf664c9e"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedb.php",
+      "sha256": "9c0430a7344fea444aeb83637f42384340152eac56c8306da3230ad03bfd77cc"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedbi.z",
+      "sha256": "e607592fbd93e36113df6cc96f70f8ada1da50f7e316031c45e6fa8f89bb60a4"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansi.z",
+      "sha256": "bb51fc0e36775b48b88798b58cfeef076214a0086daaac05792a712a1ec2c524"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonobi.z",
+      "sha256": "6acda976100eb802a6d92231a0edece5c0ccb92a2c4b64e1336deaca70895967"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/helveticabi.php",
+      "sha256": "2a9fa2d5773cff4850ad476fb78a3f046f7c7e2d1a1e7973d55cbe0543434fb0"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansi.php",
+      "sha256": "7a38b312bde0866543483f23d6f711597406343d641c8dbe9cf94561b0dd60f2"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonob.php",
+      "sha256": "c92a00146391e02a4e36c93d847a8b51d481d8feeaa7bdbae84de8b433e8eb26"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonob.ctg.z",
+      "sha256": "2ca0468ccb10f2a9c5c2a5e93be2b6513ad47efff33d65a3e835c1dec32f109e"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonob.z",
+      "sha256": "08f5b12694a69b404d8dc4c543de51f9e896ea3f87ffda512faa9cde822ecc43"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonobi.php",
+      "sha256": "df27234f7e1764c96da30e4208cc0d33d84e6d06cbff440cf09cc2981d5012be"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedi.z",
+      "sha256": "72294f3709cf3d617a43f7dccd65901d27aea67416ff175cafc217c7b38d346d"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensed.ctg.z",
+      "sha256": "6d983c257d60508cb24c69e3fa716ff7bebaa9c5e3fd724dab1ba7908f10b87d"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusans.php",
+      "sha256": "2311c1906b07b3e86e1444e1e2315e086f3efbb89f117f97ff81a8b44ea61d2b"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansbi.z",
+      "sha256": "0ea641a64e22330c084c5a9e4c2aaa4cbd2630874783bbea6fe90ab8e64b6189"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusans.ctg.z",
+      "sha256": "6d983c257d60508cb24c69e3fa716ff7bebaa9c5e3fd724dab1ba7908f10b87d"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/helveticai.php",
+      "sha256": "d4ed58a6edf5d848c4c32d361d41228496933d735e79d0e725523e4968cff74f"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedbi.php",
+      "sha256": "04ae915e17067a68e4709ecf68c2279af3c3902dbcc407731bf3a40898b200f6"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensed.php",
+      "sha256": "b77f1d467d6228093321d9fb0405b7129ec5b143b8f3908cce4486cf0ac59e35"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonoi.ctg.z",
+      "sha256": "d8ec6a157aaeb91da2553033fe278a287a047d7e2cb4d66ebc4ebde65176b4fc"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedbi.ctg.z",
+      "sha256": "2a17981112ac3fa2498af66d872f0eed9a0ee3049cdf95f648e6fc23a93a3b16"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmono.php",
+      "sha256": "1d629de00d34cc94a53c1e065e0786f09c6326317f83f879186fae5d489f6731"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmono.ctg.z",
+      "sha256": "a515d829384130976db8f388bf9aaba3a264dea6e972e4fb74c16f5383b2c3f2"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansb.php",
+      "sha256": "b2d8a30e2f7823ecab8c612cab6c664f3c4b9dbf31e7729bd1620d90a1a4933a"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonobi.ctg.z",
+      "sha256": "62ecd004f7d18091bbc711c5849b38f2f10dfcd4b320b7d7c4b9afbf16a4e835"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansextralight.php",
+      "sha256": "cd9bb9738ffb69d0948bb151669ddb9a5e6781540be76016f3b9910796526624"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusanscondensedi.ctg.z",
+      "sha256": "301d861615d72ee46a2b9c295453c72ffe00f0dfc0a32964fae6b5e2c8e3c8e2"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavusansmonoi.z",
+      "sha256": "5b44607e05eab09e57dc358716bee5fac28c72944b9859cfedf1d1d95cff12f0"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/tcpdf_fonts.php",
+      "sha256": "33e7f8647b295584c85461d35658afdeea5d5da5fbae2aa24b16cbc1798bbb76"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/tcpdf_images.php",
+      "sha256": "dd615410895b6055727223d7198e1cd485aa3fcb6d1195799c29ec4726e38085"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/sRGB.icc",
+      "sha256": "2a92d4bae450b76d8b0aa42193df974d75f62738ecebf74f01c5e75b12a95796"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/tcpdf_static.php",
+      "sha256": "dff66b73df6a2e32b3cc2525a20df991fa7d0883ade5dc2e6dc65b9cbbdc8e0f"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/tcpdf_filters.php",
+      "sha256": "8c03b8e008f0bbef522c44568d8cda40761572544d6ab8cbfb89489401b009a3"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/tcpdf_colors.php",
+      "sha256": "fc0aae08f6bcf5b2c9500178b8dc91c3e3ac126a580fb510ad13c3163442e6e9"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/tcpdf_font_data.php",
+      "sha256": "f638dabefa06b48d221be90448e8dec07303bc4fa333913ebe174eb25780153c"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/BUGS",
+      "sha256": "7b0b301e3e2baf3d5827201b82787b59d534a1421c7d33a81df0a30048fb5a33"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/NEWS",
+      "sha256": "549f28393fe8ba3f6678383a0c67280fea2d382aafab1effd19fc6dd161f5fb6"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/AUTHORS",
+      "sha256": "8e28e159e142eb77eb81d10792297eb3b72876f1e249757beb4dffbbf43a7998"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/langcover.txt",
+      "sha256": "d2741b9ceb3895e5befa942048dcf87dff0d578458066e395d3fed21a0a08411"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/unicover.txt",
+      "sha256": "f18900228b9964dd36252215da5c900da7745f7a0df04a3f7cbdc42e834429aa"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/LICENSE",
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.34/README",
+      "sha256": "95605977d1840e8329831aab29545e482388afd2250ace6cf5aae69039f92ac3"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/BUGS",
+      "sha256": "7b0b301e3e2baf3d5827201b82787b59d534a1421c7d33a81df0a30048fb5a33"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/NEWS",
+      "sha256": "84d523c1454c88aa2b9bb71b9219662715ac7ed4e93901a7b6a7eefdd5db95c2"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/AUTHORS",
+      "sha256": "5434ca04a47fff28fb93ecf93f686d8c074fa2a74d6d75cb61b98acacdf6f7c6"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/langcover.txt",
+      "sha256": "4f98edac091177ebefca66d6f26b4dd3561e42e20bf27185c2fd85d7f0956dc9"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/unicover.txt",
+      "sha256": "239d03403cea8cb6fff3d782f8132674017b46935a1846ef42a01808aa064404"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/LICENSE",
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/fonts/dejavu-fonts-ttf-2.33/README",
+      "sha256": "de5bd29cd380cafbb4bdb41189302a565208a3c7ba5ddcdc2850768900d13291"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/barcodes/pdf417.php",
+      "sha256": "44b38192075224b8ee0bff3883873ce171bab4f5629314a57ad478b37e0065fe"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/barcodes/datamatrix.php",
+      "sha256": "6aaf548aff92c0db466ae065e611d765a15ed65d6bd9683a5d7e8bf69ceffedd"
+    },
+    {
+      "file": "source/gold-commerce-core/vendor/tcpdf/include/barcodes/qrcode.php",
+      "sha256": "38dbb5715272ef92dcff85a10d51e6651f7c82017492d8a27bbf5b1ca9490d3b"
+    },
+    {
+      "file": "docs/USER_GUIDE_FA.md",
+      "sha256": "161c1b75aa2ad2a949149517ef6b29ccaaae90baf121a2240a50c61746f232b9"
+    },
+    {
+      "file": "docs/TECHNICAL_ARCHITECTURE.md",
+      "sha256": "4b38f64b64aaecef605ad6b44e48f29580ca7e87c05368711b57fa0ed3e08156"
+    },
+    {
+      "file": "docs/INSTALL.md",
+      "sha256": "e92c072d98ad52a431ba4dde5e77af5da5ea8a5d6131b7e0ae5c35725ec94568"
+    },
+    {
+      "file": "docs/OPERATIONS_AND_RECONCILIATION.md",
+      "sha256": "a7f8db2367921b9579ee73dace8f911af02a984bb4e2545528b727964daf6c33"
+    },
+    {
+      "file": "docs/TEST_REPORT.md",
+      "sha256": "9c2fe4395af5c527befb9b78c02a575f5cee148b2674847776faf39041f9e67f"
+    },
+    {
+      "file": "docs/CONFIGURATION.md",
+      "sha256": "30d9393932e415b5a46f960ae301dea2495cdd0e2de77a302d9bfe36f8bef422"
+    },
+    {
+      "file": "docs/REPRODUCING_TESTS.md",
+      "sha256": "d4799b26e0c3848a064fb948768f96608477b95f386200574622c2cc92f41017"
+    },
+    {
+      "file": "docs/DATA_DICTIONARY.md",
+      "sha256": "df9f1bf8bfd101b8fc632e326d9ee2612ebf0354d56f6868a9de716fb29086c9"
+    },
+    {
+      "file": "docs/INPUTS_NEEDED.md",
+      "sha256": "738b9616981b250c06ca0a12d20fad335a045aaa0ff5ada20f8d225e2e6461f9"
+    },
+    {
+      "file": "docs/CHANGELOG.md",
+      "sha256": "64949573fd3fd5c80caa72d62e05553b0db6bd4ada9ff78e4cebdc0b3c488ea8"
+    },
+    {
+      "file": "docs/API_CONTRACT_AGAH_v1_PROPOSED.md",
+      "sha256": "a9889be96ef05661d450393c03a584b069bd9c7bfd1ace6a432fb7860037148f"
+    },
+    {
+      "file": "docs/THREAT_MODEL.md",
+      "sha256": "ecee15861ec0ce10c2490a55ea78faf27e7d82d856b8620056411eb8877c543d"
+    },
+    {
+      "file": "docs/KNOWN_LIMITATIONS.md",
+      "sha256": "dc7630223693a42ee5f5392447d3d5d77b7eb5e001b1d01da1a46f3a805457f6"
+    },
+    {
+      "file": "docs/THIRD_PARTY_LICENSES.md",
+      "sha256": "0f35b7d3f2d511373aef777b961f912e5ce16e833d1d02671fe80ca23aa3cbd5"
+    },
+    {
+      "file": "docs/SECURITY_AND_BACKUP.md",
+      "sha256": "4a45604bf45414997caafcbf664fb2cf90421f0557119884b795aab52476623a"
+    },
+    {
+      "file": "docs/API_CONTRACT_RATE.md",
+      "sha256": "f08f688623190bbcff3ba2e9cd1eea1b1eb8ebbb8b33e10cd843bd95b6dd44bf"
+    },
+    {
+      "file": "docs/REQUIREMENTS_TRACEABILITY.md",
+      "sha256": "1adb40bd90b720717e1db05c79bba551f5347e34f76939a8b21676e6af705290"
+    },
+    {
+      "file": "tests/extended.php",
+      "sha256": "a4964462e087637324bd7a0d547ade379065af4a229ac7ad6c45d84c1d0895f1"
+    },
+    {
+      "file": "tests/prepare-callbacks.php",
+      "sha256": "1a41ea72a56e379e53b567e62144ac1c68b163bb62212474e78f6fdc7d3c63da"
+    },
+    {
+      "file": "tests/zip-install.py",
+      "sha256": "f08c00d9259c9eff6eb7caeeac5c13aff0bae67da31d55cd57838dd8edf33540"
+    },
+    {
+      "file": "tests/load-callback.py",
+      "sha256": "935b3fe8815b4a8e4cde629ac1d146e0a7f70406bbb6eaa3bbfea3e4556c306b"
+    },
+    {
+      "file": "tests/run.sh",
+      "sha256": "4add11b3d2f6746c264dae37c45c0a9b37b7087f7af9a5a3bf6d2591868c08da"
+    },
+    {
+      "file": "tests/browser.cjs",
+      "sha256": "4906e5ed2d833d753444cf5b8df5b4884284523b7e8e40a9cf1a102182d47de6"
+    },
+    {
+      "file": "tests/export-readers.py",
+      "sha256": "fa81fa16dba5bbe7c5b21d8b5481e2abdad8bf9dab1e65d94faf7060f661d4c7"
+    },
+    {
+      "file": "tests/integration.php",
+      "sha256": "e7beb2a114eae1d4c46228d916c9cbffcc91e3b8844fe9f9a5e7d23e8a0bed68"
+    },
+    {
+      "file": "tests/lifecycle.py",
+      "sha256": "0a699fca6d3947795ecc8fecb2fad3654397aa7b489774ef4e794275a2ed9ff4"
+    },
+    {
+      "file": "tests/accessibility.cjs",
+      "sha256": "79217a3d5aee304d6e16a38c8e7e689b298c3fcfeb2914ced289d95b2a3d9616"
+    },
+    {
+      "file": "tests/concurrency.py",
+      "sha256": "be8f9648f7240aa0c086bf35bd3b8f4b49fee9c0642ed86993bf9f5374bdff05"
+    },
+    {
+      "file": "tests/load-monitor.py",
+      "sha256": "7d77308a0c26df50585dd0bc9a3995c96bd81141517a189e4e2da91076dae2f1"
+    },
+    {
+      "file": "tests/seo.cjs",
+      "sha256": "62982e0e9fe5c9aa702fe74ab1d8a4b690c93cc3a910cf6c0f2ec8b0ee358aac"
+    },
+    {
+      "file": "tests/load.py",
+      "sha256": "7d42bb3bb73431a800aedfa4f5ceb09b6213327b645e17307078e1685ea8a432"
+    },
+    {
+      "file": "tests/export.php",
+      "sha256": "1a6ae53f703395ad30044c38a068bbd6994fb3d50a03720399866cb7175c00ed"
+    },
+    {
+      "file": "tests/zip-install.php",
+      "sha256": "5481298ff334372887abaf8381099ded035c5a56f9af0018ddebf2d64f1dd8a0"
+    },
+    {
+      "file": "tests/security.php",
+      "sha256": "c5316afa5c24cc56cb74625684c1a4466f85678868393897555aeeda071e18b6"
+    },
+    {
+      "file": "tests/quote-browser.cjs",
+      "sha256": "20cc613205536941f42b027f13cbf8ddaaeadb60d71b618153b590bed7774a7a"
+    },
+    {
+      "file": "tests/worker.php",
+      "sha256": "927c5a272c9e1d1aea458022bb824afb3d266a9c56dc269893d1806aa8eab813"
+    },
+    {
+      "file": "tests/performance.cjs",
+      "sha256": "232fc7555186e22ecf960d6cf59d6db4605a65470d8f3950d799e5292df23868"
+    },
+    {
+      "file": "tests/restore.py",
+      "sha256": "15555bd340cf2ddfb9c470a6fab2301fc28f4787fa5d1d0f09120848f049ee1d"
+    },
+    {
+      "file": "tests/unit.php",
+      "sha256": "4858c1293f2bd3a488ce18e3c395c594011e458799bb9ab4bc3c48b31ae75e54"
+    },
+    {
+      "file": "tests/load-adapter.php",
+      "sha256": "454977d11edc6b918e78377e05723e1facbdda06c7d4dcffe793b9e98f8a40aa"
+    },
+    {
+      "file": "tests/customizer.cjs",
+      "sha256": "1b3742ddcdd738e7ed3edf0613a5172678364d6c3013847d2e3c80e6734f69c5"
+    },
+    {
+      "file": "fixtures/install-sample.php",
+      "sha256": "1e262c1405a552a9d8c57795034ce0b78f187557715527f48cd43f4af12e6729"
+    },
+    {
+      "file": "evidence/sample-report-85.docx",
+      "sha256": "519b472645f00a4df97a0a826ac300517ede5268a26153b06b77eb1df51f57fa"
+    },
+    {
+      "file": "evidence/quote-order-paid.png",
+      "sha256": "f7f642aeca0737c29d2f7f312959128017f303ae64174c86100db17952126908"
+    },
+    {
+      "file": "evidence/acceptance-matrix.json",
+      "sha256": "7d67e5dc695a6ee6ab784f49cf10344541888dc4b840704abb28599ed0452443"
+    },
+    {
+      "file": "evidence/order-paid-8081.png",
+      "sha256": "cdffe4b40ae6f46b8b296c033779feeb3b77005106c2748e5ec42e2774923c63"
+    },
+    {
+      "file": "evidence/home-8082-mobile-dark.png",
+      "sha256": "39b0fca7ff2dbe5aa39c21bd59bc8504d0ab1ef372ce89e274992ed4a495bf6f"
+    },
+    {
+      "file": "evidence/integration-php85.json",
+      "sha256": "4c4c33b6d75c889ad6888f60b5a1a85741eff22df66161cbbed50e8cd03ffb0b"
+    },
+    {
+      "file": "evidence/load-callback-isolated.json",
+      "sha256": "8dad9ea97218850aa62914ac28c696246cc162a494b410a3ee282dbac61199f7"
+    },
+    {
+      "file": "evidence/store-isolation.json",
+      "sha256": "ee79f951beb13ef77bd60314635746f89e32ba12bedaffd5675f798ff7669cab"
+    },
+    {
+      "file": "evidence/customizer-blue-pencil.png",
+      "sha256": "987da4218996041fd823a8adfc0e8707b0e273132336dbc4e0bfb969b8f0d31d"
+    },
+    {
+      "file": "evidence/customizer.json",
+      "sha256": "f35f25187f7dc2bf71c2c758264ebe4b1d1a622becdcdb8ea316ef8958b77310"
+    },
+    {
+      "file": "evidence/requirements.json",
+      "sha256": "9720671e464bbfb623c22a8298df286bdd461e226974fbbb13e75bd58c7013ad"
+    },
+    {
+      "file": "evidence/functional-summary.json",
+      "sha256": "e53ad85c61efbf43a69aa93835c848a860d459a4ba1a9019fc1a848ab025d881"
+    },
+    {
+      "file": "evidence/static-review.json",
+      "sha256": "e26159f8b269914df8a6debd589b48fc15e2d9f3ec43308a04a3bed330f798dc"
+    },
+    {
+      "file": "evidence/performance-lab.json",
+      "sha256": "a3ae098be6d0f515c5e5a0dfd285896a1285eb0c8c77e5e892e282367c234515"
+    },
+    {
+      "file": "evidence/security-php83.json",
+      "sha256": "73039ce63c65416ea7f6d7e3c468f9e7603fccb716865e7b1578a5d9ce09d45a"
+    },
+    {
+      "file": "evidence/extended-php83.json",
+      "sha256": "8e3693fcf519568356614684c87e6d8a882bc6367909e4a649d50bdef31d9ccb"
+    },
+    {
+      "file": "evidence/sample-report-83.xlsx",
+      "sha256": "bdc28b99339305018393843f8beb136815d93d99dc64108a69981462001d0bf6"
+    },
+    {
+      "file": "evidence/home-8082-desktop.png",
+      "sha256": "76cde3c3355c8d729c55cac9cfe8eec4c31391cd9f3a8fc46dfe7560957f0dd4"
+    },
+    {
+      "file": "evidence/order-paid-8082.png",
+      "sha256": "c813c78693c4e58f0d2755f657609bb616c2dfec5d92ae3d0e3e2594174fc6d9"
+    },
+    {
+      "file": "evidence/load-errors.jsonl",
+      "sha256": "6f0fba3068cb33fadafc093b475d91f6f26bf8fde481e49da5c8c1f2a003f62b"
+    },
+    {
+      "file": "evidence/accessibility.json",
+      "sha256": "0bf4d74649168d9229672c5d3d8cc0e5b13540fe39331dcc216abaa871829abb"
+    },
+    {
+      "file": "evidence/checkout-8082.png",
+      "sha256": "38dd25b125b4837468a9a571e19e76fa6e5c870dcb125533974431b6b9774f67"
+    },
+    {
+      "file": "evidence/unit-php83.json",
+      "sha256": "6d1344c6f5e1e916427d4b290d1be5a4c9d215eb95b55467a0792658a883c740"
+    },
+    {
+      "file": "evidence/restore.json",
+      "sha256": "6c538430edc00d7bd01303263de01186894627443add6fed949f96910e01e79e"
+    },
+    {
+      "file": "evidence/build-versions.json",
+      "sha256": "445b64d0093c8b7db371b6e6b3bc4760be9f58f17a2b520a53f822916037410c"
+    },
+    {
+      "file": "evidence/seo.json",
+      "sha256": "8876a0c9f5a757e053c5c8fa0c04c9c5d2411df8f90b0f52937046f1365230d4"
+    },
+    {
+      "file": "evidence/home-8081-desktop.png",
+      "sha256": "e86b36c0666aba73183049d2794ffff7701e4254608ff72e90d964594af28fa7"
+    },
+    {
+      "file": "evidence/export-readers.json",
+      "sha256": "e0bd4e6d76037f0ae15ca16d9d5bde23dd6b0d9fe213033637d1402b3bf9a0f9"
+    },
+    {
+      "file": "evidence/checkout-8081.png",
+      "sha256": "3668d4eaa4061e32ed580740908d48eea9edc4e840662f4852a5cc5e17d99253"
+    },
+    {
+      "file": "evidence/security-php85.json",
+      "sha256": "0e7bc6fe71e347c80846d25eb8ff1c719f0ac9f07951ba86818d88badd8c6e83"
+    },
+    {
+      "file": "evidence/unit-php85.json",
+      "sha256": "542c2a354613e812137457db8e0b17949660de7619a464ba451a0b7f81b65ada"
+    },
+    {
+      "file": "evidence/sample-report-83.docx",
+      "sha256": "fd23259b4c58192bc390c34ea16654ff3fe106c3ff2b5c0df1f451e459cdc05e"
+    },
+    {
+      "file": "evidence/load-callback-reconciliation.json",
+      "sha256": "def71a072e40d24df9e621ec6dae12aa4b80a28cd8517d48a5b34a341e3220f7"
+    },
+    {
+      "file": "evidence/zip-install.json",
+      "sha256": "02450abbd9cc55c267b9710439164cdc2c48bbf43ef53022ebeac66379354fe1"
+    },
+    {
+      "file": "evidence/extended-php85.json",
+      "sha256": "f0f9756fa5b26640dc477c84ef10aa17cf299395389782c3e5d524f415ff7d96"
+    },
+    {
+      "file": "evidence/concurrency.json",
+      "sha256": "3532148eaeeea052eee8881c0d4a089b388977834d40448b66ffa97df6885c70"
+    },
+    {
+      "file": "evidence/load-before-gap-lock-fix.json",
+      "sha256": "66058dcce03b03d00ba2197822dc13050eb0de2a99afcc9add41c604aeb3f6b6"
+    },
+    {
+      "file": "evidence/source-commit.txt",
+      "sha256": "9bf15b3549c001ac55525bf5570b0fed89c4085617e4130e867677135e54a43d"
+    },
+    {
+      "file": "evidence/docker-images.txt",
+      "sha256": "902226a4017e4422d8b2bb06214902d32a4bf4011dbfd687d80e2a5ba74a9856"
+    },
+    {
+      "file": "evidence/sample-report-83.pdf",
+      "sha256": "ae935e1071c5f8e021ac6957f635f819d139c4d2eed8681e357c248d96e27211"
+    },
+    {
+      "file": "evidence/sample-report-85.xlsx",
+      "sha256": "27ccf72fecb0fd4a0a1193adb737cd48c4d11170b6455ac5808c1e0328bd5a39"
+    },
+    {
+      "file": "evidence/quote-browser.json",
+      "sha256": "730574fc2d00f76d27adbb8809ea0475bab6aef78bc0b1d0c236fbf5a70b5a95"
+    },
+    {
+      "file": "evidence/lifecycle.json",
+      "sha256": "ba81e84a57e0d7c4286e8bfa4dc543bfaefbdc5b8e6ec348b6a40b0f56b64b68"
+    },
+    {
+      "file": "evidence/load-resources.jsonl",
+      "sha256": "062a723d0542af59cd4ea3d4054e516f4e5abc0e7d0f8a0b304805e3c49b31fe"
+    },
+    {
+      "file": "evidence/sample-report-85.pdf",
+      "sha256": "0e4e5e559d494d2dc1a48db1d6b3506afde1adc951b4aed29778eebcd2783757"
+    },
+    {
+      "file": "evidence/specification-integrity.json",
+      "sha256": "65077a1a676663cf6705d5481264c12691241ddb7214b5b243f3e024c82a68a9"
+    },
+    {
+      "file": "evidence/home-8081-mobile-dark.png",
+      "sha256": "eacd5fb0c14a7c4e89a26f35a9672e2af0316e6c42837573ddc65443d9350978"
+    },
+    {
+      "file": "evidence/load.json",
+      "sha256": "167d36758ddbf438cd2ae5a0e6f8150c3afe8f3705cbec7445ef2a437a4c3bdc"
+    },
+    {
+      "file": "evidence/integration-php83.json",
+      "sha256": "ba924e020f35a4d88cc00d9035ddd88496f8ab52458e06a949e63feff0d9328a"
+    },
+    {
+      "file": "evidence/browser.json",
+      "sha256": "d92fb62072f674cd0c674b5fdb6224052df0ab71b67b6af27704300d7f85742a"
+    },
+    {
+      "file": "tools/package.py",
+      "sha256": "6e36377ff02a404d694746e6862700c1edf43c102adeb87817afb65a953bcf2c"
+    },
+    {
+      "file": "tools/report.py",
+      "sha256": "4fb8ba4f3470401c83af5559c1cb1f6f4434087a876e79c71d01b12470b050d0"
+    },
+    {
+      "file": "tools/setup-test-env.py",
+      "sha256": "8cda3096c45b74af329b054c28bd2b754517755cee631b7d4f5e36c1cd395e6c"
+    },
+    {
+      "file": "tools/a11y/package-lock.json",
+      "sha256": "f5d702b2a27c307daf35a21fecda6b6ead523603363366247d39c19bac04dacf"
+    },
+    {
+      "file": "tools/a11y/package.json",
+      "sha256": "ff86dd29e00aa7dac3a95d0759013e996fa429e559c855fb168942cc69cc1f6f"
+    }
+  ],
+  "agah_status": "MOCK_ONLY",
+  "agah_reference_included": false
+}

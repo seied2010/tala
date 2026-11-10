@@ -1,0 +1,39 @@
+{
+    "suite": "extended",
+    "php": "8.3.36",
+    "at_utc": "2026-11-10T13:58:31+00:00",
+    "results": [
+        {
+            "test": "PAY.deadline_snapshotted",
+            "status": "PASS"
+        },
+        {
+            "test": "PAY.receipt_recovery_after_crash",
+            "status": "PASS"
+        },
+        {
+            "test": "PAY.late_beyond_grace_kept_review",
+            "status": "PASS"
+        },
+        {
+            "test": "PAY.generic_gateway_late_receipt_retained",
+            "status": "PASS"
+        },
+        {
+            "test": "PAY.item_mutation_same_total_rejected",
+            "status": "PASS"
+        },
+        {
+            "test": "PRICE.expired_latest_never_revives_old",
+            "status": "PASS"
+        },
+        {
+            "test": "PRICE.inheritance",
+            "status": "PASS"
+        },
+        {
+            "test": "AGAH.float_and_invalid_wire_money_rejected",
+            "status": "PASS"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "specification_version": "1.1.0",
+  "documents": [
+    {
+      "file": "README_FIRST.md",
+      "sha256": "0eabc0d8f4e83990b41e75b133a1435f649a0f9ee60bcaf20022caeac050906c",
+      "status": "PASS"
+    },
+    {
+      "file": "01_product_master.md",
+      "sha256": "bb85c67115ccc87e0fbcab818ecb6f76209caec91103502a3814f58193e7e5ef",
+      "status": "PASS"
+    },
+    {
+      "file": "01_product_master.docx",
+      "sha256": "f7557bc86222bb91784eb5e8bd9e0719b7a465fe5c6236b16e8857898d772b31",
+      "status": "PASS"
+    },
+    {
+      "file": "02_technical_execution_spec.md",
+      "sha256": "619c0836d168f42e17f32c8370a112b93851deafe68961d0f7d121d8ec78fdcb",
+      "status": "PASS"
+    },
+    {
+      "file": "02_technical_execution_spec.docx",
+      "sha256": "5e3ce7f0a1af18b43d6ffa0569b4b9ba5869134857f0bff19c854ebd0add70ad",
+      "status": "PASS"
+    },
+    {
+      "file": "03_prompt_for_claude_or_codex.md",
+      "sha256": "41809bced238f03f2090a3e43d0992cacfaa08325da52304ffc1ef61614aa1c7",
+      "status": "PASS"
+    },
+    {
+      "file": "04_owner_inputs_checklist.md",
+      "sha256": "eda48a8b9fbbe25981795996da1803412eca804ec4f3ff65090bf1835aa32647",
+      "status": "PASS"
+    },
+    {
+      "file": "04_owner_inputs_checklist.docx",
+      "sha256": "28c185c3e758bec542759f9294fd80e58221043aa1bb7d76f9baf94b1a546758",
+      "status": "PASS"
+    },
+    {
+      "file": "05_requirements_traceability_seed.md",
+      "sha256": "9523b2f01a2e541c7c9382ffa0c6aa4a089f01faedd72deee160820301b41952",
+      "status": "PASS"
+    },
+    {
+      "file": "06_decisions_and_changes_v1_1.md",
+      "sha256": "f9b2a325832df6afceb7c523dd67562476511f34804300121af289550d6cbf67",
+      "status": "PASS"
+    }
+  ],
+  "agah": {
+    "sha256": "9ff291994e673133a762f305c15b8d11b78f3f22667634c964c530360827aa9c",
+    "changed": false,
+    "packaged": false
+  }
+}

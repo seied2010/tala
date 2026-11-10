@@ -1,0 +1,118 @@
+{
+  "at_utc": "2026-11-10T13:24:55.640Z",
+  "engine": "axe-core",
+  "results": [
+    {
+      "page": "home",
+      "width": 1440,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "product",
+      "width": 1440,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "product",
+      "width": 1440,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "cart",
+      "width": 1440,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "cart",
+      "width": 1440,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "checkout",
+      "width": 1440,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "checkout",
+      "width": 1440,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "home",
+      "width": 360,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "home",
+      "width": 360,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "product",
+      "width": 360,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "product",
+      "width": 360,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "cart",
+      "width": 360,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "cart",
+      "width": 360,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "checkout",
+      "width": 360,
+      "mode": "light",
+      "status": "PASS",
+      "violations": []
+    },
+    {
+      "page": "checkout",
+      "width": 360,
+      "mode": "dark",
+      "status": "PASS",
+      "violations": []
+    }
+  ]
+}

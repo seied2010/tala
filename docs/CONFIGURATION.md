@@ -1,0 +1,17 @@
+# Configuration
+
+Settings live in each installation's `gc_settings`. Default finance is unconfigured, pricing is request-only, guest quoting is off, special trading features are off, and authority is standalone. No activation enables real APIs or rewrites existing content.
+
+Pricing precedence: product `price_type`, then category strategy, then store strategy. `INHERIT` is explicit. The category refers to the Gold product kind, independent of merchandising taxonomy. Provider fallback order is explicit; an empty fallback list denies stale purchases. The latest tick must be valid; an older tick is never silently revived after a newer tick expires.
+
+Fee modes: fixed IRR, per gram, percentage. Default percentage bases are metal for making and metal+making for profit, overridable in the model's `making_base`/`profit_base` arrays. Tax bases are named components; component discounts reduce their own base before tax. A market/coin direct price does not acquire craftsmanship fees. Manual final price is a final seller-approved amount and must not be taxed a second time. Its snapshot explicitly says INCLUDED_UNITEMIZED; the invoice does not pretend unknown tax is zero or classify the entire final amount as raw metal. Use FIXED/manual-rate component pricing when an itemized tax breakdown is needed. All fixed/discount inputs should be integer IRR in production policy; weight precision is four decimals.
+
+Woo tax: Gold item prices already include Gold tax, so their Woo tax status is none. Configure shipping taxes separately and verify invoice/checkout totals. Do not install a second tax/price plugin that recalculates Gold item prices without integration tests.
+
+Auto rate setup: register a named HTTPS endpoint under manual-rate administration. It must implement API_CONTRACT_RATE. Put its bearer secret in an environment variable named `GC_RATE_...`; the settings form stores only the variable name. WP safe HTTP rejects private destinations, unsafe URLs, embedded credentials and redirects. Run real cron; expiry checks do not depend on cron success.
+
+Brand portability: Appearance → انتقال طراحی exports/imports schema-versioned JSON. Only whitelisted design fields are accepted; no secrets, PII, uploaded media IDs or API credentials are exported. Move owned media separately. Blueprint shop names, tax/rates, addresses and products are synthetic and never copied automatically during activation.
+
+Gateway contract: a provider-specific adapter must verify signature/reference/amount/currency with the actual bank, then call `Quotes::settle(orderId, providerTransaction, verifiedIrrString, intent, providerId)`. The actual verified amount is mandatory; do not use a client amount. The Woo generic payment hook relies on the installed gateway's own verified contract and is not bank-specific certification. Amount mismatch, unknown start or grace expiry routes to review. Refund money movement remains the chosen gateway's responsibility; Woo and Gold retain accounting evidence.
+
+Extensions: `gc_rate_providers` adds server-side provider callables; `gc_refund_event`/`gc_verified_paid` expose committed Woo events. No social scraping, unofficial messenger bridge, personal commission or hidden remote dependency is included. OTP/SMS and social publication remain disabled until an official selected adapter and test credentials are supplied. Admin password authentication remains separate.

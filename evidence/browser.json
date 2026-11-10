@@ -1,0 +1,60 @@
+{
+  "at_utc": "2026-11-10T14:03:35.667Z",
+  "results": [
+    {
+      "test": "T39.8081.rtl_responsive_dark",
+      "status": "PASS",
+      "ms": 1644
+    },
+    {
+      "test": "T40.8081.keyboard_and_controls",
+      "status": "PASS",
+      "ms": 2125
+    },
+    {
+      "test": "T37.8081.classic_checkout_end_to_end",
+      "status": "PASS",
+      "ms": 5659
+    },
+    {
+      "test": "T42.8081.private_cache_headers",
+      "status": "PASS",
+      "ms": 656
+    },
+    {
+      "test": "T41.8081.yoast_canonical_and_private_noindex",
+      "status": "PASS",
+      "ms": 682
+    },
+    {
+      "test": "T39.8082.rtl_responsive_dark",
+      "status": "PASS",
+      "ms": 1613
+    },
+    {
+      "test": "T40.8082.keyboard_and_controls",
+      "status": "PASS",
+      "ms": 2134
+    },
+    {
+      "test": "T37.8082.classic_checkout_end_to_end",
+      "status": "PASS",
+      "ms": 5652
+    },
+    {
+      "test": "T42.8082.private_cache_headers",
+      "status": "PASS",
+      "ms": 844
+    },
+    {
+      "test": "T41.8082.yoast_canonical_and_private_noindex",
+      "status": "PASS",
+      "ms": 822
+    },
+    {
+      "test": "BROWSER.javascript_errors",
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

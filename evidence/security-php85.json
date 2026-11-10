@@ -1,0 +1,39 @@
+{
+    "suite": "security",
+    "php": "8.5.12",
+    "at_utc": "2026-11-10T13:52:28+00:00",
+    "results": [
+        {
+            "test": "SEC.rest_product_schema",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.rate_ssrf_and_credentials",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.inbox_scope_and_schema",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.no_default_guest_admin_access",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.audit_chain_and_redaction",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.report_role_no_invoice_pii",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.classic_requires_admin_approval",
+            "status": "PASS"
+        },
+        {
+            "test": "SEC.guest_rate_limit",
+            "status": "PASS"
+        }
+    ]
+}

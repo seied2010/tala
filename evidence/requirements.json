@@ -1,0 +1,527 @@
+{
+  "specification": "1.1",
+  "rows": [
+    {
+      "id": "ARC-01",
+      "requirement": "هر مشتری نصب و دیتای مستقل داشته باشد",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T44",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-02",
+      "requirement": "سفارش و پرداخت WooCommerce، سازگاری HPOS",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T36–T37",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-03",
+      "requirement": "موتور قیمت مستقل از قالب",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T01–T10, T35",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-04",
+      "requirement": "اتصال آگاه اختیاری و جدا",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T25, T35",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-05",
+      "requirement": "فروشگاه مستقل بدون آگاه",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T25",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-06",
+      "requirement": "عدم حذف داده هنگام تعویض قالب یا غیرفعال‌سازی",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T35",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-07",
+      "requirement": "نصب ZIP و عدم تکثیر برگه",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T33–T34",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "ARC-08",
+      "requirement": "سازگاری PHP 8.3 و آزمون 8.5",
+      "code": "source/*; source/gold-commerce-core/src/Database.php; guards/gold-commerce-guard.php",
+      "acceptance": "T38",
+      "evidence": "zip-install.json; lifecycle.json; store-isolation.json; build-versions.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "UI-01",
+      "requirement": "RTL موبایل‌محور و فوق‌عریض",
+      "code": "source/gold-commerce-theme/functions.php; assets/theme.css; assets/accessibility.css",
+      "acceptance": "T39",
+      "evidence": "browser.json; accessibility.json; customizer.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "UI-02",
+      "requirement": "روشن/تاریک و تنظیم دسترس‌پذیری",
+      "code": "source/gold-commerce-theme/functions.php; assets/theme.css; assets/accessibility.css",
+      "acceptance": "T39–T40",
+      "evidence": "browser.json; accessibility.json; customizer.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "UI-03",
+      "requirement": "Customizer ماژولار و Blue Pencil",
+      "code": "source/gold-commerce-theme/functions.php; assets/theme.css; assets/accessibility.css",
+      "acceptance": "T33, T39",
+      "evidence": "browser.json; accessibility.json; customizer.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "UI-04",
+      "requirement": "فونت فارسی محلی WOFF2",
+      "code": "source/gold-commerce-theme/functions.php; assets/theme.css; assets/accessibility.css",
+      "acceptance": "بازبینی دارایی‌های نصب",
+      "evidence": "browser.json; accessibility.json; customizer.json",
+      "status": "Blocked by external input",
+      "note": "Local WOFF2 loader and fallback implemented; licensed owner font file pending."
+    },
+    {
+      "id": "UI-05",
+      "requirement": "صفحات اصلی، محصول، دسته، حساب، پیگیری و FAQ",
+      "code": "source/gold-commerce-theme/functions.php; assets/theme.css; assets/accessibility.css",
+      "acceptance": "T33, T39",
+      "evidence": "browser.json; accessibility.json; customizer.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "CAT-01",
+      "requirement": "انواع مصنوعات، سکه، شمش، دست‌دوم، سفارشی",
+      "code": "source/gold-commerce-core/src/Catalog.php; Admin.php; Plugin.php",
+      "acceptance": "T01–T04",
+      "evidence": "unit-php83.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "CAT-02",
+      "requirement": "فیلد عیار، وزن، سنگ، اجرت، سود و وضعیت تأمین",
+      "code": "source/gold-commerce-core/src/Catalog.php; Admin.php; Plugin.php",
+      "acceptance": "T01–T04",
+      "evidence": "unit-php83.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "CAT-03",
+      "requirement": "وضعیت موجود/سفارشی/نیازمند استعلام",
+      "code": "source/gold-commerce-core/src/Catalog.php; Admin.php; Plugin.php",
+      "acceptance": "T23–T24",
+      "evidence": "unit-php83.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-01",
+      "requirement": "نرخ لحظه‌ای با adapter قابل تعویض",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T07–T08",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-02",
+      "requirement": "ورود دستی نرخ تحت کنترل دسترسی",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T09",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-03",
+      "requirement": "استعلام قیمت و صدور مظنه فروشنده",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T11–T12",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-04",
+      "requirement": "مهلت لینک پرداخت قابل تنظیم و کنترل سروری",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T13, T22",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-05",
+      "requirement": "مظنه نسخه‌دار و لغو نسخه قبلی",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T14",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-06",
+      "requirement": "کنترل دوباره نرخ هنگام checkout",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T07",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-07",
+      "requirement": "محاسبه Decimal و واحدهای واضح",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T01–T06, T10",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-08",
+      "requirement": "مالیات و تخفیف نسخه‌دار و قابل تنظیم",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T06",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PRICE-09",
+      "requirement": "ثبت snapshot غیرقابل تغییر سفارش قطعی",
+      "code": "source/gold-commerce-core/src/Pricing.php; Decimal.php; Rates.php; Quotes.php",
+      "acceptance": "T06, T18",
+      "evidence": "unit-php83.json; extended-php85.json; integration-php83.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PAY-01",
+      "requirement": "callback تکراری، دیرهنگام و خطای مبلغ",
+      "code": "source/gold-commerce-core/src/Quotes.php; Stock.php; Plugin.php",
+      "acceptance": "T17–T20",
+      "evidence": "integration-php83.json; concurrency.json; quote-browser.json; extended-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PAY-02",
+      "requirement": "پرداخت تنها با مالکیت مظنه و توکن امن",
+      "code": "source/gold-commerce-core/src/Quotes.php; Stock.php; Plugin.php",
+      "acceptance": "T11, T16",
+      "evidence": "integration-php83.json; concurrency.json; quote-browser.json; extended-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PAY-03",
+      "requirement": "کنترل شروع پرداخت هم‌زمان",
+      "code": "source/gold-commerce-core/src/Quotes.php; Stock.php; Plugin.php",
+      "acceptance": "T15",
+      "evidence": "integration-php83.json; concurrency.json; quote-browser.json; extended-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "PAY-04",
+      "requirement": "جریان لغو و بازگشت",
+      "code": "source/gold-commerce-core/src/Quotes.php; Stock.php; Plugin.php",
+      "acceptance": "T21",
+      "evidence": "integration-php83.json; concurrency.json; quote-browser.json; extended-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "STOCK-01",
+      "requirement": "جلوگیری از oversell آخرین واحد",
+      "code": "source/gold-commerce-core/src/Quotes.php; Stock.php; Plugin.php",
+      "acceptance": "T23",
+      "evidence": "integration-php83.json; concurrency.json; quote-browser.json; extended-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "STOCK-02",
+      "requirement": "رزرو/آزادسازی بدون کاهش تکراری",
+      "code": "source/gold-commerce-core/src/Quotes.php; Stock.php; Plugin.php",
+      "acceptance": "T24",
+      "evidence": "integration-php83.json; concurrency.json; quote-browser.json; extended-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "AGAH-01",
+      "requirement": "آگاه مرجع قیمت/موجودی در حالت اتصال",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "T26, T30",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "AGAH-02",
+      "requirement": "رزرو و کسر فقط در آگاه در حالت اتصال",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "T26–T27",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "AGAH-03",
+      "requirement": "webhook idempotent / dedup",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "T28",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "AGAH-04",
+      "requirement": "صف پایدار، retry و reconciliation",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "T29, T31–T32",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "AGAH-05",
+      "requirement": "API واقعی باید احراز شود؛ Mock تا آن زمان",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "T25–T32 (Mock)",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "COM-01",
+      "requirement": "اعلان امن و بدون ارسال تکراری",
+      "code": "source/gold-commerce-core/src/Notifications.php; NotificationChannel.php",
+      "acceptance": "T12, T18",
+      "evidence": "integration-php83.json; quote-browser.json; KNOWN_LIMITATIONS.md",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "COM-02",
+      "requirement": "کانال اجتماعی تنها با API رسمی",
+      "code": "source/gold-commerce-core/src/Notifications.php; NotificationChannel.php",
+      "acceptance": "بازبینی مستند API",
+      "evidence": "integration-php83.json; quote-browser.json; KNOWN_LIMITATIONS.md",
+      "status": "Test passed",
+      "note": "No unofficial API is used; live social publication disabled until an official selected adapter/account exists."
+    },
+    {
+      "id": "MKT-01",
+      "requirement": "انتساب منبع سفارش قطعی به کمپین",
+      "code": "source/gold-commerce-core/src/Customer.php; Plugin.php; Reports.php",
+      "acceptance": "گزارش نمونه سفارش",
+      "evidence": "browser.json; security-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "SEO-01",
+      "requirement": "Yoast، noindex تگ‌ها و صفحات خصوصی",
+      "code": "source/gold-commerce-core/src/Plugin.php; Cache.php",
+      "acceptance": "T41",
+      "evidence": "browser.json; seo.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "SEO-02",
+      "requirement": "cache bypass صفحات مالی و شخصی",
+      "code": "source/gold-commerce-core/src/Plugin.php; Cache.php",
+      "acceptance": "T42",
+      "evidence": "browser.json; seo.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "REPORT-01",
+      "requirement": "خروجی XLSX/PDF/DOCX با نقش‌محوری",
+      "code": "source/gold-commerce-core/src/Reports.php; Admin.php",
+      "acceptance": "T43",
+      "evidence": "export-readers.json; integration-php85.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "SEC-01",
+      "requirement": "کنترل نقش/مالکیت/REST/nonce/validation",
+      "code": "source/gold-commerce-core/src/Rest.php; Database.php; Privacy.php",
+      "acceptance": "Security test suite",
+      "evidence": "security-php83.json; security-php85.json; static-review.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "SEC-02",
+      "requirement": "اسرار خارج از ZIP و لاگ",
+      "code": "source/gold-commerce-core/src/Rest.php; Database.php; Privacy.php",
+      "acceptance": "Secret scan",
+      "evidence": "security-php83.json; security-php85.json; static-review.json",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "OPS-01",
+      "requirement": "بکاپ، بازیابی و monitoring صف/درگاه",
+      "code": "tests/restore.py; tests/load.py; docs/SECURITY_AND_BACKUP.md",
+      "acceptance": "Restore drill",
+      "evidence": "restore.json; load.json; load-resources.jsonl",
+      "status": "Test passed",
+      "note": "Only the scope recorded by the cited tests; no live third-party certification."
+    },
+    {
+      "id": "OPS-02",
+      "requirement": "آزمون پله‌ای بار تا ۱۰۰۰ کاربر در محیط تعریف‌شده",
+      "code": "tests/restore.py; tests/load.py; docs/SECURITY_AND_BACKUP.md",
+      "acceptance": "Load test report",
+      "evidence": "restore.json; load.json; load-resources.jsonl",
+      "status": "Implemented",
+      "note": "Synthetic load and raw capacity/error/P95 results; no guarantee of 1000 production users."
+    },
+    {
+      "id": "GC-A01",
+      "requirement": "حالت‌های مستقل، متصل و degrade، تغییر مرجع کنترل‌شده",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I01, I12",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A02",
+      "requirement": "آگاه مرجع موجودی و Woo فقط cache/display",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "T26, I08",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A03",
+      "requirement": "بدون رزرو واقعی آگاه فروش مستقیم متصلِ کالای محدود ممنوع",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I07, I11",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A04",
+      "requirement": "تفکیک price-authority-final و base-components",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I03",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A05",
+      "requirement": "قرارداد پول ۱۰۰ و مقدار ۱۰۰۰۰ با JSON String",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I10",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A06",
+      "requirement": "نگاشت جداگانه شناسه Woo/Agah/Store/Company",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I02, I04",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A07",
+      "requirement": "Woo مرجع پرداخت؛ outbox و تطبیق آگاه",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I05",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A08",
+      "requirement": "return/credit بعد فاکتور؛ release تنها قبل از ثبت قطعی",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I09",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A09",
+      "requirement": "انبار منطقی بدون الزام آدرس فیزیکی",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I06",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A10",
+      "requirement": "snapshot تفکیک طلای پایه، اجرت، سود، سنگ، مالیات",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I03, I10",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A11",
+      "requirement": "اتصال API مستقل از قالب آگاه",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I12",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    },
+    {
+      "id": "GC-A12",
+      "requirement": "وضعیت Mock و واقعی آشکار",
+      "code": "source/gold-agah-connector/src/Connector.php; MockProvider.php",
+      "acceptance": "I11",
+      "evidence": "integration-php83.json; integration-php85.json; lifecycle.json",
+      "status": "Test passed",
+      "note": "MOCK_ONLY evidence; real Agah API/reservation BLOCKED_EXTERNAL. No production connected purchase."
+    }
+  ]
+}

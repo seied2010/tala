@@ -1,0 +1,5 @@
+const fs=require('fs');const {chromium}=require('/opt/codex/cua_node/lib/node_modules/playwright-core');
+(async()=>{const b=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});const p=await b.newPage();const results=[];
+try{await p.goto('http://localhost:8082/?product_tag='+encodeURIComponent('آزمون-سئو'),{waitUntil:'networkidle'});const robots=await p.locator('meta[name=robots]').getAttribute('content');if(!robots.includes('noindex'))throw Error('Product tag is indexable');results.push({test:'T41.yoast_tag_noindex',status:'PASS'});
+const response=await p.request.get('http://localhost:8082/?sitemap=1');const text=await response.text();if(!text.includes('sitemapindex'))throw Error('Sitemap unavailable');if(text.includes('product_tag-sitemap'))throw Error('Product tag remains in sitemap');results.push({test:'T41.yoast_sitemap',status:'PASS'});
+}catch(e){results.push({test:'T41.seo',status:'FAIL',error:e.message});}await b.close();fs.writeFileSync(__dirname+'/../evidence/seo.json',JSON.stringify({at_utc:new Date().toISOString(),results},null,2));console.log(JSON.stringify(results));})();

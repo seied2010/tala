@@ -1,0 +1,53 @@
+{
+  "at_utc": "2026-11-10T14:06:23.752354+00:00",
+  "suites": [
+    {
+      "file": "extended-php83.json",
+      "count": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "file": "extended-php85.json",
+      "count": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "file": "integration-php83.json",
+      "count": 43,
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "file": "integration-php85.json",
+      "count": 43,
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "file": "security-php83.json",
+      "count": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "file": "security-php85.json",
+      "count": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "file": "unit-php83.json",
+      "count": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    {
+      "file": "unit-php85.json",
+      "count": 11,
+      "passed": 11,
+      "failed": 0
+    }
+  ]
+}

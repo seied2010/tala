@@ -1,0 +1,226 @@
+{
+    "suite": "integration",
+    "php": "8.3.36",
+    "wordpress": "7.1.4",
+    "woocommerce": "11.2.2",
+    "hpos": "yes",
+    "database": "gold1",
+    "at_utc": "2026-11-10T14:02:30+00:00",
+    "results": [
+        {
+            "test": "T07.server_reprice_confirmation",
+            "status": "PASS",
+            "ms": 267
+        },
+        {
+            "test": "T09.rate_capability_and_audit",
+            "status": "PASS",
+            "ms": 59
+        },
+        {
+            "test": "T11.guest_ownership",
+            "status": "PASS",
+            "ms": 902
+        },
+        {
+            "test": "T12.version_and_notification_dedup",
+            "status": "PASS",
+            "ms": 674
+        },
+        {
+            "test": "T13.expired_server_rejection",
+            "status": "PASS",
+            "ms": 560
+        },
+        {
+            "test": "T14.superseded_token",
+            "status": "PASS",
+            "ms": 754
+        },
+        {
+            "test": "T15.single_intent_replay",
+            "status": "PASS",
+            "ms": 489
+        },
+        {
+            "test": "T16.amount_and_token_tampering",
+            "status": "PASS",
+            "ms": 616
+        },
+        {
+            "test": "T17.late_callback_within_grace",
+            "status": "PASS",
+            "ms": 1054
+        },
+        {
+            "test": "T18.duplicate_settlement_snapshot",
+            "status": "PASS",
+            "ms": 843
+        },
+        {
+            "test": "T19.mismatch_manual_review",
+            "status": "PASS",
+            "ms": 795
+        },
+        {
+            "test": "T20.failure_requote_retry",
+            "status": "PASS",
+            "ms": 1055
+        },
+        {
+            "test": "T21.refund_restock",
+            "status": "PASS",
+            "ms": 1225
+        },
+        {
+            "test": "T22.utc_expiry",
+            "status": "PASS",
+            "ms": 588
+        },
+        {
+            "test": "T23.last_unit_native_hold",
+            "status": "PASS",
+            "ms": 427
+        },
+        {
+            "test": "T24.expiry_release_once",
+            "status": "PASS",
+            "ms": 549
+        },
+        {
+            "test": "T25.standalone_no_connector_authority",
+            "status": "PASS",
+            "ms": 103
+        },
+        {
+            "test": "T26.connected_stock_hook_suppression",
+            "status": "PASS",
+            "ms": 161
+        },
+        {
+            "test": "T27.reserve_timeout_same_key",
+            "status": "PASS",
+            "ms": 34
+        },
+        {
+            "test": "T28.inbox_dedup",
+            "status": "PASS",
+            "ms": 1
+        },
+        {
+            "test": "T29.outage_queue_recovery",
+            "status": "PASS",
+            "ms": 7
+        },
+        {
+            "test": "T30.price_authority_contracts",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T31.sale_refund_idempotency",
+            "status": "PASS",
+            "ms": 2
+        },
+        {
+            "test": "T32.api_version_fail_closed",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "T34.repeat_install_preserves_pages",
+            "status": "PASS",
+            "ms": 44
+        },
+        {
+            "test": "T35.theme_change_preserves_finance",
+            "status": "PASS",
+            "ms": 762
+        },
+        {
+            "test": "T36.hpos_order_crud",
+            "status": "PASS",
+            "ms": 926
+        },
+        {
+            "test": "T41.no_false_schema",
+            "status": "PASS",
+            "ms": 256
+        },
+        {
+            "test": "T43.real_export_files",
+            "status": "PASS",
+            "ms": 413
+        },
+        {
+            "test": "I01.authority_switch_with_open_orders",
+            "status": "PASS",
+            "ms": 601
+        },
+        {
+            "test": "I02.company_isolation",
+            "status": "PASS",
+            "ms": 1
+        },
+        {
+            "test": "I03.no_silent_override",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "I04.stable_mapping_history",
+            "status": "PASS",
+            "ms": 544
+        },
+        {
+            "test": "I05.paid_survives_outage",
+            "status": "PASS",
+            "ms": 1846
+        },
+        {
+            "test": "I06.logical_warehouse_without_address",
+            "status": "PASS",
+            "ms": 2
+        },
+        {
+            "test": "I07.unknown_reserve_lookup",
+            "status": "PASS",
+            "ms": 4
+        },
+        {
+            "test": "I08.one_invoice_one_stock_move",
+            "status": "PASS",
+            "ms": 2
+        },
+        {
+            "test": "I09.credit_after_invoice",
+            "status": "PASS",
+            "ms": 5
+        },
+        {
+            "test": "I10.integer_scaled_contract",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "I11.mock_cannot_sell_connected",
+            "status": "PASS",
+            "ms": 199
+        },
+        {
+            "test": "I12.degrade_preserves_authority",
+            "status": "PASS",
+            "ms": 210
+        },
+        {
+            "test": "SEC.rest_and_hmac_permissions",
+            "status": "PASS",
+            "ms": 0
+        },
+        {
+            "test": "SEC.no_raw_token_in_quote_or_audit",
+            "status": "PASS",
+            "ms": 615
+        }
+    ]
+}

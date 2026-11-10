@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-11-10T13:35:14.553Z",
+  "results": [
+    {
+      "width": 1440,
+      "lcp": 1076,
+      "cls": 0,
+      "eventDuration": 56,
+      "ttfb": 278.3999999994412,
+      "bytes": 325321,
+      "status": "PASS",
+      "scope": "Local Chromium lab sample, no network/CPU throttling. eventDuration is a sampled interaction duration, not field INP."
+    },
+    {
+      "width": 390,
+      "lcp": 536,
+      "cls": 0,
+      "eventDuration": 24,
+      "ttfb": 216,
+      "bytes": 325321,
+      "status": "PASS",
+      "scope": "Local Chromium lab sample, no network/CPU throttling. eventDuration is a sampled interaction duration, not field INP."
+    }
+  ],
+  "field_inp": "NOT_TESTED; requires deployed site and real users"
+}

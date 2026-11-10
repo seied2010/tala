@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-11-10T14:06:07.037Z",
+  "test": "QUOTE_BROWSER.full_guest_seller_payment",
+  "status": "PASS",
+  "order_id": 433,
+  "amount_irr": "25100000",
+  "channels": "Synthetic encrypted inbox read; actual SMTP not tested",
+  "steps": [
+    "guest request in browser",
+    "staff shipping prepared by WC CRUD fixture",
+    "seller issues via protected admin form",
+    "customer confirms one-use link",
+    "Woo pay-order form and test gateway",
+    "paid order and immutable total"
+  ]
+}

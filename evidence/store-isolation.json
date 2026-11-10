@@ -1,0 +1,23 @@
+{
+  "test": "T44.independent_installations",
+  "status": "PASS",
+  "at_utc": "2026-11-10T13:52:16.387591+00:00",
+  "stores": [
+    {
+      "store_uuid": "0f8e1c1c-6b0d-4a6b-9edc-93e70de32a26",
+      "database": "gold1",
+      "brand": "نشان — فروشگاه نمونه اول",
+      "accent": "#a77735",
+      "mode": "standalone",
+      "gateway": "gc_test TEST_ONLY"
+    },
+    {
+      "store_uuid": "d9f60d27-d793-4608-96ef-3cbc84502e2b",
+      "database": "gold2",
+      "brand": "زرین — فروشگاه نمونه دوم",
+      "accent": "#426d82",
+      "mode": "standalone",
+      "gateway": "gc_test TEST_ONLY"
+    }
+  ]
+}

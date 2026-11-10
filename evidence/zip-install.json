@@ -1,0 +1,14 @@
+{
+  "test": "T33_T34.clean_zip_install",
+  "status": "PASS",
+  "at_utc": "2026-11-10T14:06:31+00:00",
+  "core_version": "1.1.0",
+  "php": "8.5.12",
+  "wordpress": "7.1.4",
+  "woocommerce": "11.2.2",
+  "hpos": "yes",
+  "pages": 13,
+  "repeat_install": "no duplicate pages and no SQL error",
+  "payment": "TEST_ONLY verified paid; no real funds",
+  "core_plugin_path": "/project/runtime/zipsite/wp-content/plugins/gold-commerce-core"
+}

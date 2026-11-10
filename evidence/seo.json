@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-11-10T13:50:26.819Z",
+  "results": [
+    {
+      "test": "T41.yoast_tag_noindex",
+      "status": "PASS"
+    },
+    {
+      "test": "T41.yoast_sitemap",
+      "status": "PASS"
+    }
+  ]
+}

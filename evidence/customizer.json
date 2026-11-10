@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-11-10T13:50:08.908Z",
+  "test": "UI03.customizer_and_brand_export",
+  "status": "PASS",
+  "blue_pencil_shortcuts": 7,
+  "live_preview": "heading change via selective refresh",
+  "export_schema": "1",
+  "secret_fields_exported": false
+}

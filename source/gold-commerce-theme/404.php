@@ -1,0 +1,1 @@
+<?php get_header(); ?><main id="main-content" class="gc-content-width gc-page"><h1>این صفحه پیدا نشد</h1><p>می‌توانید از جست‌وجو یا فروشگاه ادامه دهید.</p><?php get_search_form(); ?><a class="gc-button" href="<?php echo esc_url(gc_shop_url()); ?>">رفتن به فروشگاه</a></main><?php get_footer(); ?>

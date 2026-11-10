@@ -1,0 +1,15 @@
+{
+  "test": "OPS.isolated_1000_prepared_callbacks",
+  "status": "PASS",
+  "at_utc": "2026-11-10T14:02:58.255442+00:00",
+  "users": 1000,
+  "requests": 1000,
+  "p95_ms": 168508.63,
+  "throughput_rps": 5.65,
+  "duration_s": 176.94,
+  "status_codes": {
+    "200": 1000
+  },
+  "criterion": "all 1000 prepared callbacks HTTP 200 within unchanged 180-second budget",
+  "scope": "Settlement operation isolated from order/quote/start preparation. Concurrent regression checks shared CPU and temporarily changed test-shop authority; these callbacks remained based on persisted valid intents. No real bank."
+}

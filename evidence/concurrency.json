@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-11-10T14:04:16.671855+00:00",
+  "workers": 2,
+  "tests": [
+    {
+      "id": "T23.concurrent_last_unit",
+      "status": "PASS",
+      "successful_issues": 1
+    },
+    {
+      "id": "T15.concurrent_payment_start",
+      "status": "PASS",
+      "successful_intents": 1
+    },
+    {
+      "id": "T18.concurrent_callback",
+      "status": "PASS",
+      "results": [
+        "duplicate",
+        "paid"
+      ],
+      "final_stock": 0
+    }
+  ]
+}

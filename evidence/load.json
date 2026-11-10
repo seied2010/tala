@@ -1,0 +1,494 @@
+{
+  "at_utc": "2026-11-10T13:56:33.336252+00:00",
+  "environment": {
+    "cpu_quota_cores": 2,
+    "memory_limit_bytes": 8589934592,
+    "php_workers": 8,
+    "server": "PHP built-in, 8 workers; MariaDB 11; no page cache; local networking",
+    "dataset": "Shared hidden finite-stock product, synthetic orders, virtual delivery; authenticated test-only adapter; no real payment or rate API. Security/public anti-abuse is tested separately."
+  },
+  "results": [
+    {
+      "users": 50,
+      "operation": "browse",
+      "requests": 50,
+      "duration_s": 3.884,
+      "throughput_rps": 12.87,
+      "p95_ms": 3683.26,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 270.2MiB / 9.735GiB\ngc-db 0.01% 440.8MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "product",
+      "requests": 50,
+      "duration_s": 3.805,
+      "throughput_rps": 13.14,
+      "p95_ms": 3501.47,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 270MiB / 9.735GiB\ngc-db 0.01% 441.2MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "search",
+      "requests": 50,
+      "duration_s": 4.462,
+      "throughput_rps": 11.21,
+      "p95_ms": 4177.32,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 269.9MiB / 9.735GiB\ngc-db 0.01% 441.1MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "request",
+      "requests": 50,
+      "duration_s": 6.462,
+      "throughput_rps": 7.74,
+      "p95_ms": 5909.24,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 272MiB / 9.735GiB\ngc-db 0.02% 441.4MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "issue",
+      "requests": 50,
+      "duration_s": 6.176,
+      "throughput_rps": 8.1,
+      "p95_ms": 5569.79,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.02% 274MiB / 9.735GiB\ngc-db 39.26% 443.3MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "checkout",
+      "requests": 50,
+      "duration_s": 8.401,
+      "throughput_rps": 5.95,
+      "p95_ms": 7935.61,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 273.9MiB / 9.735GiB\ngc-db 0.14% 446MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "callback",
+      "requests": 50,
+      "duration_s": 8.604,
+      "throughput_rps": 5.81,
+      "p95_ms": 8016.74,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 270.5MiB / 9.735GiB\ngc-db 0.11% 448.1MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 50,
+      "operation": "queue",
+      "requests": 50,
+      "duration_s": 3.913,
+      "throughput_rps": 12.78,
+      "p95_ms": 3685.11,
+      "status_codes": {
+        "200": 50
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 269MiB / 9.735GiB\ngc-db 0.02% 448.1MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "browse",
+      "requests": 100,
+      "duration_s": 7.466,
+      "throughput_rps": 13.39,
+      "p95_ms": 7188.23,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 269.4MiB / 9.735GiB\ngc-db 0.02% 448.5MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "product",
+      "requests": 100,
+      "duration_s": 8.056,
+      "throughput_rps": 12.41,
+      "p95_ms": 7405.51,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 269.5MiB / 9.735GiB\ngc-db 0.01% 448.6MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "search",
+      "requests": 100,
+      "duration_s": 7.825,
+      "throughput_rps": 12.78,
+      "p95_ms": 7382.47,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 269.7MiB / 9.735GiB\ngc-db 0.00% 448.6MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "request",
+      "requests": 100,
+      "duration_s": 9.485,
+      "throughput_rps": 10.54,
+      "p95_ms": 9078.8,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 272.3MiB / 9.735GiB\ngc-db 0.08% 456.2MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "issue",
+      "requests": 100,
+      "duration_s": 12.191,
+      "throughput_rps": 8.2,
+      "p95_ms": 11512.54,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 274.2MiB / 9.735GiB\ngc-db 0.09% 466.8MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "checkout",
+      "requests": 100,
+      "duration_s": 13.546,
+      "throughput_rps": 7.38,
+      "p95_ms": 12440.21,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 274MiB / 9.735GiB\ngc-db 0.01% 468.1MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "callback",
+      "requests": 100,
+      "duration_s": 23.869,
+      "throughput_rps": 4.19,
+      "p95_ms": 22574.51,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.05% 278.7MiB / 9.735GiB\ngc-db 0.15% 506.1MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 100,
+      "operation": "queue",
+      "requests": 100,
+      "duration_s": 10.722,
+      "throughput_rps": 9.33,
+      "p95_ms": 10000.39,
+      "status_codes": {
+        "200": 100
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 269.2MiB / 9.735GiB\ngc-db 0.01% 506.4MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "browse",
+      "requests": 300,
+      "duration_s": 26.765,
+      "throughput_rps": 11.21,
+      "p95_ms": 24522.31,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 269.7MiB / 9.735GiB\ngc-db 0.01% 506.5MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "product",
+      "requests": 300,
+      "duration_s": 24.543,
+      "throughput_rps": 12.22,
+      "p95_ms": 23250.94,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 269.4MiB / 9.735GiB\ngc-db 0.01% 506.5MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "search",
+      "requests": 300,
+      "duration_s": 28.995,
+      "throughput_rps": 10.35,
+      "p95_ms": 26881.36,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 270MiB / 9.735GiB\ngc-db 0.02% 506.4MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "request",
+      "requests": 300,
+      "duration_s": 30.203,
+      "throughput_rps": 9.93,
+      "p95_ms": 27726.92,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 272.3MiB / 9.735GiB\ngc-db 0.64% 508.3MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "issue",
+      "requests": 300,
+      "duration_s": 35.952,
+      "throughput_rps": 8.34,
+      "p95_ms": 33611.36,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 273.8MiB / 9.735GiB\ngc-db 0.02% 521.7MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "checkout",
+      "requests": 300,
+      "duration_s": 42.462,
+      "throughput_rps": 7.07,
+      "p95_ms": 39005.4,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 274.3MiB / 9.735GiB\ngc-db 0.01% 529.6MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "callback",
+      "requests": 300,
+      "duration_s": 61.949,
+      "throughput_rps": 4.84,
+      "p95_ms": 57671.4,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 281.3MiB / 9.735GiB\ngc-db 0.08% 546.9MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 300,
+      "operation": "queue",
+      "requests": 300,
+      "duration_s": 27.395,
+      "throughput_rps": 10.95,
+      "p95_ms": 25899.78,
+      "status_codes": {
+        "200": 300
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.05% 269.9MiB / 9.735GiB\ngc-db 0.01% 547.1MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "browse",
+      "requests": 1000,
+      "duration_s": 97.583,
+      "throughput_rps": 10.25,
+      "p95_ms": 89003.13,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 270.5MiB / 9.735GiB\ngc-db 3.89% 547MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "product",
+      "requests": 1000,
+      "duration_s": 90.931,
+      "throughput_rps": 11.0,
+      "p95_ms": 86984.54,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 270.1MiB / 9.735GiB\ngc-db 0.01% 547.6MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "search",
+      "requests": 1000,
+      "duration_s": 90.717,
+      "throughput_rps": 11.02,
+      "p95_ms": 83990.87,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 270.7MiB / 9.735GiB\ngc-db 0.01% 547.8MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "request",
+      "requests": 1000,
+      "duration_s": 124.542,
+      "throughput_rps": 8.03,
+      "p95_ms": 115814.89,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.06% 272.8MiB / 9.735GiB\ngc-db 0.02% 551.8MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "issue",
+      "requests": 1000,
+      "duration_s": 168.826,
+      "throughput_rps": 5.92,
+      "p95_ms": 156817.22,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.03% 274.8MiB / 9.735GiB\ngc-db 0.43% 590.5MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "checkout",
+      "requests": 1000,
+      "duration_s": 161.185,
+      "throughput_rps": 6.2,
+      "p95_ms": 152783.35,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 0.04% 276MiB / 9.735GiB\ngc-db 0.10% 620.2MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    },
+    {
+      "users": 1000,
+      "operation": "callback",
+      "requests": 1000,
+      "duration_s": 180.832,
+      "throughput_rps": 5.53,
+      "p95_ms": 180794.42,
+      "status_codes": {
+        "200": 775,
+        "409": 1,
+        "TimeoutError": 224
+      },
+      "error_rate": 0.225,
+      "resources_end": "gc-site1 114.69% 283.9MiB / 9.735GiB\ngc-db 78.37% 651.8MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "FAIL"
+    },
+    {
+      "users": 1000,
+      "operation": "queue",
+      "requests": 1000,
+      "duration_s": 131.864,
+      "throughput_rps": 7.58,
+      "p95_ms": 121660.13,
+      "status_codes": {
+        "200": 1000
+      },
+      "error_rate": 0.0,
+      "resources_end": "gc-site1 108.83% 273.7MiB / 9.735GiB\ngc-db 67.77% 653.5MiB / 9.735GiB",
+      "criterion": "No unexpected HTTP failures; synthetic burst P95 <= 180s. Not a commercial SLA.",
+      "status": "PASS"
+    }
+  ]
+}

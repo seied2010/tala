@@ -1,0 +1,10 @@
+{
+    "test": "OPS.prepared_callback_reconciliation",
+    "status": "PASS",
+    "prepared": 1000,
+    "paid_woo_orders": 1000,
+    "paid_quotes": 1000,
+    "unique_paid_receipts": 1000,
+    "currency": "IRR",
+    "synthetic_amount_per_order": "100"
+}

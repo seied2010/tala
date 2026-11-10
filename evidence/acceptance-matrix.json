@@ -1,0 +1,519 @@
+{
+  "version": "1.1.0",
+  "tests": [
+    {
+      "id": "T01",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T02",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T03",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T04",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T05",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T06",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T07",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T08",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T09",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T10",
+      "status": "PASS",
+      "evidence": [
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T11",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T12",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T13",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T14",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T15",
+      "status": "PASS",
+      "evidence": [
+        "concurrency.json",
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T16",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T17",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T18",
+      "status": "PASS",
+      "evidence": [
+        "concurrency.json",
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T19",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T20",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T21",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T22",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T23",
+      "status": "PASS",
+      "evidence": [
+        "concurrency.json",
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T24",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T25",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T26",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T27",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T28",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T29",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T30",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T31",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T32",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T33",
+      "status": "PASS",
+      "evidence": [
+        "zip-install.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T34",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json",
+        "zip-install.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T35",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json",
+        "lifecycle.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T36",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T37",
+      "status": "PASS",
+      "evidence": [
+        "browser.json"
+      ],
+      "scope": "Classic checkout alternative, actual browser purchase; Blocks denied for Gold."
+    },
+    {
+      "id": "T38",
+      "status": "PASS",
+      "evidence": [
+        "browser.json",
+        "extended-php83.json",
+        "extended-php85.json",
+        "integration-php83.json",
+        "integration-php85.json",
+        "security-php83.json",
+        "security-php85.json",
+        "unit-php83.json",
+        "unit-php85.json"
+      ],
+      "scope": "Both PHP runtimes, actual WP/Woo/Yoast and test gateway; unselected real gateway BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "T39",
+      "status": "PASS",
+      "evidence": [
+        "browser.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T40",
+      "status": "PASS",
+      "evidence": [
+        "browser.json"
+      ],
+      "scope": "Keyboard + axe WCAG-tagged checks. Formal screen-reader audit NOT_TESTED."
+    },
+    {
+      "id": "T41",
+      "status": "PASS",
+      "evidence": [
+        "browser.json",
+        "integration-php83.json",
+        "integration-php85.json",
+        "seo.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T42",
+      "status": "PASS",
+      "evidence": [
+        "browser.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T43",
+      "status": "PASS",
+      "evidence": [
+        "export-readers.json",
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "Local automated test; no live bank certification."
+    },
+    {
+      "id": "T44",
+      "status": "PASS",
+      "evidence": [
+        "store-isolation.json"
+      ],
+      "scope": "Independent UUID/DB/brand/color; TEST_ONLY adapter in both, real gateway choice pending."
+    },
+    {
+      "id": "I01",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I02",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I03",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I04",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I05",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I06",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I07",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I08",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I09",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I10",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I11",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    },
+    {
+      "id": "I12",
+      "status": "PASS",
+      "evidence": [
+        "integration-php83.json",
+        "integration-php85.json",
+        "lifecycle.json"
+      ],
+      "scope": "MOCK_ONLY / proposed Agah contract; actual API BLOCKED_EXTERNAL."
+    }
+  ]
+}

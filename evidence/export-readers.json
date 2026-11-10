@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-11-10T14:02:32.895620+00:00",
+  "results": [
+    {
+      "test": "T43.external_readers_php83",
+      "status": "PASS",
+      "readers": [
+        "python-docx",
+        "openpyxl",
+        "pypdf"
+      ],
+      "xlsx_formula_injection": "inlineStr remains string",
+      "pdf_pages": 1
+    },
+    {
+      "test": "T43.external_readers_php85",
+      "status": "PASS",
+      "readers": [
+        "python-docx",
+        "openpyxl",
+        "pypdf"
+      ],
+      "xlsx_formula_injection": "inlineStr remains string",
+      "pdf_pages": 1
+    }
+  ]
+}

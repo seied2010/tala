@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-11-10T13:40:26.968382+00:00",
+  "counts_before": {
+    "quotes": 119,
+    "receipts": 37
+  },
+  "counts_after": {
+    "quotes": 119,
+    "receipts": 37
+  },
+  "results": [
+    {
+      "test": "I12.actual_connector_deactivate",
+      "status": "PASS",
+      "mode": "agah_degraded"
+    },
+    {
+      "test": "T35.actual_core_deactivate_guard",
+      "status": "PASS",
+      "purchasable": false,
+      "data_preserved": true
+    }
+  ]
+}

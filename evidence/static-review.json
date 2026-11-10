@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-11-10T14:06:23.751504+00:00",
+  "scope": "Bounded dangerous-pattern review of original application PHP; not a formal penetration test",
+  "files": [
+    {
+      "file": "source/gold-agah-connector/gold-agah-connector.php",
+      "sha256": "fd52ec00e753017e512f210190bc943eecd32c6e805f54888a6af07b2f9f0837"
+    },
+    {
+      "file": "source/gold-commerce-theme/header.php",
+      "sha256": "fbc19c54a141ebf6a72fcb78de62cc618c166b1faaf77fc039c51a6df526134b"
+    },
+    {
+      "file": "source/gold-commerce-theme/woocommerce.php",
+      "sha256": "312fff388725001bdc9c9124092e8a8a2824c81667bb8da6b66f6183a317f501"
+    },
+    {
+      "file": "source/gold-commerce-theme/functions.php",
+      "sha256": "7bcd8cd255df826be8ea56c5079ac5e51215e61acf5c61363920b9f9e2553184"
+    },
+    {
+      "file": "source/gold-commerce-theme/page.php",
+      "sha256": "667545eee75365b7e51a3e497876efa59b1b7302eb752e70df029ae20c55f40b"
+    },
+    {
+      "file": "source/gold-commerce-theme/index.php",
+      "sha256": "5d523ad0fc34e8d0786a266a21d6130ebacebbd386187004a0ef2a4948143e88"
+    },
+    {
+      "file": "source/gold-commerce-theme/404.php",
+      "sha256": "fb0be5727142560bf3db3281a5528a8d3a2d90cd787bd213f674d48451b86cef"
+    },
+    {
+      "file": "source/gold-commerce-theme/footer.php",
+      "sha256": "3cafb0b6c14a8a3647c9a92adbf8106141d79f677cbff39031576f4ec7b44b37"
+    },
+    {
+      "file": "source/gold-commerce-theme/front-page.php",
+      "sha256": "3943ba1e0f6ad5b176d81ad80cba167172de8953d4516c1d345713571e0fbc99"
+    },
+    {
+      "file": "source/gold-commerce-core/gold-commerce-core.php",
+      "sha256": "27fea21906ec511c167b27c6d0ca16b067ee6a4881c839ea0eaeccc9f002dc0e"
+    },
+    {
+      "file": "source/gold-agah-connector/src/Connector.php",
+      "sha256": "52a680fb34181fa5756c51ba1cc62e08203b487e8636e5b84ee249814d4f845c"
+    },
+    {
+      "file": "source/gold-agah-connector/src/MockProvider.php",
+      "sha256": "710d970e7a1285d74c809841203bc653b2eea133cf510c2ad7a8c4eff404911c"
+    },
+    {
+      "file": "source/gold-commerce-core/guards/gold-commerce-guard.php",
+      "sha256": "30d31a75cc061ea49fe22ab1bd1a2506fcf56cbce21e23c1f088e1060a9fa86c"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Notifications.php",
+      "sha256": "3ee47e3ed99c7fc5f9b26daae6ba594dde9911ee56e4bfa6863f5596a01a5c04"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Rest.php",
+      "sha256": "dde21f3e5011048ba7ea3f0b54f35a867257e1dd7f6e281511fc3f06bb90e3a8"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Quotes.php",
+      "sha256": "b8536459902285876a32e61af38c17c9bd7eb9b443dc167a70359673c02d80d9"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Stock.php",
+      "sha256": "ea87c3180db0cc04e28f949db5892fdf74a94990f0ccd8d3f2c47ef29be273f2"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Admin.php",
+      "sha256": "0901136350159248ad8ccd71d86d216c3fae3dcea07eb5fb98d75829bae8bac2"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Database.php",
+      "sha256": "a3e563554bc616a6b5e129582d32f401e20ebdaf302637f7ed5c8e3287b24a81"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Catalog.php",
+      "sha256": "b9481fd443efb78cc2418184e611bde2309af14ffb7d987724dc3260aa0acf41"
+    },
+    {
+      "file": "source/gold-commerce-core/src/ClassicCheckout.php",
+      "sha256": "2358b430703c7b601d764717f5bc329c0755c53d7ab0043a0c9ffe00a6d66184"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Plugin.php",
+      "sha256": "69714564ed90dc76a42e6c8cbff080f2f5b8b82ba00f182f399329caef0eb154"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Reports.php",
+      "sha256": "78b77f3e4735397cf0f2bc80a111693dcd8913959d44ec9e91e9b6f6d8ee3bd9"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Privacy.php",
+      "sha256": "9455dd8fff06e8f3d5354afd88a0f3f52367c1ecf317f3e1de2e2a32dacc3b62"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Translations.php",
+      "sha256": "39dda00d01aaace91076f184cda29d53339ca7e0b845ad981430495ce7aa6cc5"
+    },
+    {
+      "file": "source/gold-commerce-core/src/TestGateway.php",
+      "sha256": "b4edc0fecab7a9ee7673d72bbb44087ab5d07ddb6c9e83574de57e817e081fd9"
+    },
+    {
+      "file": "source/gold-commerce-core/src/NotificationChannel.php",
+      "sha256": "15b6c37ea4bf673dea3ddb7a452c5e971d141578793b55f0312506a4baa243dd"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Pricing.php",
+      "sha256": "28f98801b1fe8aedcf665f34199569a185c65fcf6f21b0a2d5d001989e31d143"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Cache.php",
+      "sha256": "294bcee7c159666178a7866f530f74eed42ee980bd3e18e29cbee74ab87d990b"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Customer.php",
+      "sha256": "9e4b9171931436c2ca7efe20b60c48141888715302472d56718158fd9cdf2d78"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Rates.php",
+      "sha256": "039d1bbe8db575c226574455820045b11366215b53e0593fe6f735468d05a01c"
+    },
+    {
+      "file": "source/gold-commerce-core/src/Decimal.php",
+      "sha256": "9a875676815acb47e4a3b2f6c723ec0fc3b6c4a41b658ef5f6a6c2ba77252eef"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+083f039c4945d764b122103b54db860cdb594a2ceb6f4f962610cd4e9e592fca  Gold-Commerce-1.1.0-complete-delivery.zip
+b355ffe255172682c72ede9ba96d28881d181fd94f8cc8ec6fe458e6cf44dff8  gold-commerce-core-1.1.0.zip
+d1437aeab0c12f0be24ceff5e7b93cf92386a871017ea62736459b4eb8baf0fe  gold-commerce-theme-1.1.0.zip
+786325ee994439ecaf1e29dc3f3a3cbb584b0c24f0cc3e3d2762e33782b7e96b  gold-agah-connector-1.1.0.zip
+d7b9cb3de3b56e012dde164b82bbb28cc822d31cd619d064d1f3732917505ae3  manifest.json
