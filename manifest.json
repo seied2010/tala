@@ -1,6 +1,6 @@
 {
   "product": "Gold Commerce",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "specification": "Gold-Commerce-Development-Package-v1.1",
   "packages": [
     {
@@ -9,14 +9,19 @@
       "sha256": "d1437aeab0c12f0be24ceff5e7b93cf92386a871017ea62736459b4eb8baf0fe"
     },
     {
-      "file": "gold-commerce-core-1.1.0.zip",
-      "bytes": 4587352,
-      "sha256": "b355ffe255172682c72ede9ba96d28881d181fd94f8cc8ec6fe458e6cf44dff8"
+      "file": "gold-commerce-core-1.2.0.zip",
+      "bytes": 4589273,
+      "sha256": "4aa865c2b5b36b7119110505f97370723bbb0490a3cdfbad75b5bdfc6c20a9b8"
     },
     {
       "file": "gold-agah-connector-1.1.0.zip",
       "bytes": 14637,
       "sha256": "786325ee994439ecaf1e29dc3f3a3cbb584b0c24f0cc3e3d2762e33782b7e96b"
+    },
+    {
+      "file": "tala-demo-catalog-1.0.0.zip",
+      "bytes": 18469256,
+      "sha256": "f371ca497fb5187cf951dc316a7eb445083f69faceacfb04824930647358503b"
     }
   ],
   "files": [
@@ -70,11 +75,19 @@
     },
     {
       "file": "source/gold-commerce-core/gold-commerce-core.php",
-      "sha256": "27fea21906ec511c167b27c6d0ca16b067ee6a4881c839ea0eaeccc9f002dc0e"
+      "sha256": "fd9588a06202602de9f975388904bcb1d451d0c2d083d9724c3df3c4ac85912f"
     },
     {
       "file": "source/gold-commerce-core/LICENSE.txt",
       "sha256": "dec703cdb49042ca367f71c3982dee4552ffef395225f1fe9f14d29a4a0cb0ff"
+    },
+    {
+      "file": "source/tala-demo-catalog/readme.txt",
+      "sha256": "0114e8a4966fa7f3e5c2913c94c0a3a392da9c2f34b10db64a3520de8267dc7b"
+    },
+    {
+      "file": "source/tala-demo-catalog/tala-demo-catalog.php",
+      "sha256": "f2f434a325cd72d188f345a865249b6f99c49e821575e3f4a71967c56f332e7f"
     },
     {
       "file": "source/gold-agah-connector/src/Connector.php",
@@ -126,11 +139,15 @@
     },
     {
       "file": "source/gold-commerce-core/src/Quotes.php",
-      "sha256": "b8536459902285876a32e61af38c17c9bd7eb9b443dc167a70359673c02d80d9"
+      "sha256": "b240835683d3ff8abbc1d2717c44e503af0c186e69e3514465e5d42596f8a1e7"
     },
     {
       "file": "source/gold-commerce-core/src/Stock.php",
-      "sha256": "ea87c3180db0cc04e28f949db5892fdf74a94990f0ccd8d3f2c47ef29be273f2"
+      "sha256": "f20e892776d36b8739763ea0f9f2e902f6203f7d588e55345fe4898586907cd3"
+    },
+    {
+      "file": "source/gold-commerce-core/src/AgahAdapter.php",
+      "sha256": "8903ed9be98acdb66d433d64ad5570ebacf712e2a91523d821fa9f6259265f88"
     },
     {
       "file": "source/gold-commerce-core/src/Admin.php",
@@ -150,7 +167,7 @@
     },
     {
       "file": "source/gold-commerce-core/src/Plugin.php",
-      "sha256": "69714564ed90dc76a42e6c8cbff080f2f5b8b82ba00f182f399329caef0eb154"
+      "sha256": "f4c4e7beac34fdca647fa10a297709edb9af188ad904fb56cadf09339fc31a2f"
     },
     {
       "file": "source/gold-commerce-core/src/Reports.php",
@@ -501,6 +518,42 @@
       "sha256": "38dbb5715272ef92dcff85a10d51e6651f7c82017492d8a27bbf5b1ca9490d3b"
     },
     {
+      "file": "source/tala-demo-catalog/assets/images/usedgold.png",
+      "sha256": "351fb78479829a75426a9ab7d7babd5130c58e3efd7cb2a58cf247d5d1079260"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/gemstone.png",
+      "sha256": "b228e54c5853312298747bffb5f4cda441bcada4e9ee3bcb23e15ab4d7093236"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/bracelet.png",
+      "sha256": "5fd67f19e7a10cb037aacf6ebf30745d6f2092b950004fd5bc39eb92e6ea99fb"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/bullion.png",
+      "sha256": "852eee43e5035a5707ec141f9143419e80bcc0f8e021f98568170bd7e472df23"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/custom.png",
+      "sha256": "318581196db28f963b344c8bdf698009e36c86001e815f135c49c6bf11ea4c40"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/coin.png",
+      "sha256": "d7413f0e93822fada0a10233da6008f58e97522c1290b695dc6965eb052d7173"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/necklace.png",
+      "sha256": "39a488e0fab253bbdfaf3bd5f5a6ac8bddb81f9a9b41d564ec9bd29fceec0a0c"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/ring.png",
+      "sha256": "7f12b0ffd4c3632bd8b0a5b2cd7ba37702a80e689bc681e2c0f488412015d77c"
+    },
+    {
+      "file": "source/tala-demo-catalog/assets/images/earrings.png",
+      "sha256": "605498bae7f22c390ef4b95b25beb8d69e45e577fe68ef3b1864e125bcccfaf5"
+    },
+    {
       "file": "docs/USER_GUIDE_FA.md",
       "sha256": "161c1b75aa2ad2a949149517ef6b29ccaaae90baf121a2240a50c61746f232b9"
     },
@@ -510,7 +563,7 @@
     },
     {
       "file": "docs/INSTALL.md",
-      "sha256": "e92c072d98ad52a431ba4dde5e77af5da5ea8a5d6131b7e0ae5c35725ec94568"
+      "sha256": "ceb28d5bcb9eb7b1b23342ac935731b2d815e6cdb2c3906d5cf4b69c32bcc6bb"
     },
     {
       "file": "docs/OPERATIONS_AND_RECONCILIATION.md",
@@ -518,7 +571,7 @@
     },
     {
       "file": "docs/TEST_REPORT.md",
-      "sha256": "9c2fe4395af5c527befb9b78c02a575f5cee148b2674847776faf39041f9e67f"
+      "sha256": "888a76507ba5c6b6719e044bfa5ca3a688bb69b7f88c9a09d9c0377e2e835304"
     },
     {
       "file": "docs/CONFIGURATION.md",
@@ -567,6 +620,10 @@
     {
       "file": "docs/REQUIREMENTS_TRACEABILITY.md",
       "sha256": "1adb40bd90b720717e1db05c79bba551f5347e34f76939a8b21676e6af705290"
+    },
+    {
+      "file": "docs/DEMO_CATALOG_FA.md",
+      "sha256": "21931cab3fd69182fd973743ed45d8b3891633ff4a6aad35c1a1fff65c6ae863"
     },
     {
       "file": "tests/extended.php",
@@ -623,6 +680,10 @@
     {
       "file": "tests/load.py",
       "sha256": "7d42bb3bb73431a800aedfa4f5ceb09b6213327b645e17307078e1685ea8a432"
+    },
+    {
+      "file": "tests/demo-catalog.php",
+      "sha256": "a27b2c1fbfaa458a91097b88c0dc6a73d338f87b309776be72cd466325c54294"
     },
     {
       "file": "tests/export.php",
@@ -797,6 +858,10 @@
       "sha256": "fd23259b4c58192bc390c34ea16654ff3fe106c3ff2b5c0df1f451e459cdc05e"
     },
     {
+      "file": "evidence/demo-catalog.json",
+      "sha256": "de4a68f2e82a68336f5ce61417b406c7a07f8726f0346341937dfcec06691a17"
+    },
+    {
       "file": "evidence/load-callback-reconciliation.json",
       "sha256": "def71a072e40d24df9e621ec6dae12aa4b80a28cd8517d48a5b34a341e3220f7"
     },
@@ -845,6 +910,10 @@
       "sha256": "062a723d0542af59cd4ea3d4054e516f4e5abc0e7d0f8a0b304805e3c49b31fe"
     },
     {
+      "file": "evidence/release-1.2.0-validation.json",
+      "sha256": "4dd2efd9835d0ccfd7374af6d9b5086e81f409aadb23ae83accdb5a475eb945f"
+    },
+    {
       "file": "evidence/sample-report-85.pdf",
       "sha256": "0e4e5e559d494d2dc1a48db1d6b3506afde1adc951b4aed29778eebcd2783757"
     },
@@ -870,7 +939,7 @@
     },
     {
       "file": "tools/package.py",
-      "sha256": "6e36377ff02a404d694746e6862700c1edf43c102adeb87817afb65a953bcf2c"
+      "sha256": "9959dafa926d75cab856697ab703513b000bc01d648153445a1830256c813d46"
     },
     {
       "file": "tools/report.py",
@@ -890,5 +959,13 @@
     }
   ],
   "agah_status": "MOCK_ONLY",
-  "agah_reference_included": false
+  "agah_reference_included": false,
+  "demo_catalog": {
+    "version": "1.0.0",
+    "optional": true,
+    "products": 27,
+    "images": 9,
+    "prices": "FICTIONAL",
+    "purchasable_via_standard_woocommerce": true
+  }
 }

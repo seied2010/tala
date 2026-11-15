@@ -19,5 +19,5 @@ final class Stock {
         if($covered&&$expected)return;
         (new \Automattic\WooCommerce\Checkout\Helpers\ReserveStock())->reserve_stock_for_order($order,max(1,intdiv($seconds+59,60)));
     }
-    public static function release(\WC_Order $order):void{(new \Automattic\WooCommerce\Checkout\Helpers\ReserveStock())->release_stock_for_order($order);}
+    public static function release(\WC_Order $order):void{(new \Automattic\WooCommerce\Checkout\Helpers\ReserveStock())->release_stock_for_order($order);if(Plugin::mode()==='agah_connected')do_action('gc_agah_release',$order);}
 }

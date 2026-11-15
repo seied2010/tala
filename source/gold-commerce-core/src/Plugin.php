@@ -3,10 +3,13 @@ declare(strict_types=1);
 namespace GoldCommerce;
 
 final class Plugin {
-    public static function settings():array{return (array)get_option('gc_settings',[]);}
+    public static function settings():array{return (array)apply_filters('gc_settings',(array)get_option('gc_settings',[]));}
+    /** فروش مجاز است: مستقل، یا متصل به آگاه وقتی اتصال سالم است. حالت تخریب‌شده یا اتصال ناسالم فروش را می‌بندد. */
+    public static function canSell():bool{$m=self::mode();return $m==='standalone'||($m==='agah_connected'&&(bool)apply_filters('gc_agah_ready',false));}
     public static function mode():string{return (string)apply_filters('gc_authority_mode',get_option('gc_mode','standalone'));}
     public static function boot():void{
         Catalog::boot();
+        AgahAdapter::boot();
         Privacy::boot();
         Cache::boot();
         add_filter('gettext',[Translations::class,'translate'],20,3);
@@ -68,7 +71,7 @@ final class Plugin {
     }
     public static function price(\WC_Product $product):array{
         $s=self::settings();if(empty($s['finance_configured']))throw new \DomainException('finance_not_configured');
-        if(self::mode()!=='standalone')throw new \DomainException('agah_reservation_api_required');
+        if(!self::canSell())throw new \DomainException('agah_reservation_api_required');
         $p=self::model($product);if(!$p)throw new \DomainException('not_gold');
         if(in_array($p['category']??'',['melted','wallet','exchange','presale','buyback','consignment'],true)&&empty($s['feature_flags'][$p['category']]))throw new \DomainException('feature_disabled');
         if(in_array($p['supply_status']??'available',['unavailable','request_quote','made_to_order'],true))throw new \DomainException('quote_required');

@@ -1,0 +1,20 @@
+{
+  "release": "1.2.0",
+  "validated_at_utc": "2026-11-15T11:42:00Z",
+  "supplied_core_zip": {
+    "file": "gold-commerce-core-1.2.0.zip",
+    "sha256": "663ae7f9a2dba771afcf58de8606d23158bd897e6c1a07f4760f1f1c380c5ba4",
+    "source_tree_matches": true
+  },
+  "supplied_theme_zip": {
+    "file": "gold-commerce-theme-1.1.0.zip",
+    "sha256": "d1437aeab0c12f0be24ceff5e7b93cf92386a871017ea62736459b4eb8baf0fe",
+    "unchanged": true
+  },
+  "environments": [
+    {"php": "8.3.36", "wordpress": "7.1.4", "woocommerce": "11.2.2", "hpos": true, "unit": 11, "integration": 43, "security": 8, "extended": 8, "failed": 0},
+    {"php": "8.5.12", "wordpress": "7.1.4", "woocommerce": "11.2.2", "hpos": true, "unit": 11, "integration": 43, "security": 8, "extended": 8, "failed": 0}
+  ],
+  "total": {"passed": 140, "failed": 0},
+  "scope": "Local disposable WordPress stores; no real bank or live Agah certification."
+}

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Gold Commerce Core
  * Description: هسته مستقل فروش طلا، نرخ، مظنه و گزارش ووکامرس.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Requires PHP: 8.3
  * Requires at least: 6.8
  * Requires Plugins: woocommerce
@@ -11,7 +11,7 @@
  */
 declare(strict_types=1);
 defined('ABSPATH') || exit;
-define('GC_VERSION','1.1.0');
+define('GC_VERSION','1.2.0');
 define('GC_FILE',__FILE__);
 spl_autoload_register(static function(string $class):void{
     $prefix='GoldCommerce\\';

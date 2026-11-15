@@ -24,7 +24,7 @@ final class Quotes {
         return Database::lock('order:'.$orderId,static function()use($orderId,$approvedAmount,$internal){
             global $wpdb;$order=wc_get_order($orderId);if(!$order||$order->is_paid()||$order->get_meta('_gc_settled'))throw new \DomainException('order_not_quotable');
             if($order->has_status(['cancelled','refunded','completed','processing']))throw new \DomainException('order_not_quotable');
-            if(Plugin::mode()!=='standalone')throw new \DomainException('agah_reservation_api_required');
+            if(!Plugin::canSell())throw new \DomainException('agah_reservation_api_required');
             if(empty(Plugin::settings()['finance_configured']))throw new \DomainException('finance_not_configured');
             $latest=self::latest($orderId);if($latest&&$latest['status']==='payment_started')throw new \DomainException('payment_in_progress');
             $snapshots=[];$sum='0';
@@ -54,7 +54,7 @@ final class Quotes {
             if($order->get_currency()!=='IRR')throw new \DomainException('currency_mismatch');
             $ttl=(int)Plugin::settings()['quote_ttl'];$now=time();$uuid=wp_generate_uuid4();$token=bin2hex(random_bytes(32));
             // Woo's held-stock table performs its own atomic availability check across orders.
-            Stock::reserve($order,$ttl+(int)Plugin::settings()['payment_grace']);
+            Stock::reserve($order,$ttl+(int)Plugin::settings()['payment_grace']);if(Plugin::mode()==='agah_connected')do_action('gc_agah_reserve',$order);
             $previousSuppress=$wpdb->suppress_errors(true);
             $wpdb->query('START TRANSACTION');
             try{
@@ -87,7 +87,7 @@ final class Quotes {
             if(strlen($token)!==64||!hash_equals($q['token_hash'],hash('sha256',$token)))throw new \DomainException('invalid_token');
             if($q['status']!=='issued'||$latest['uuid']!==$uuid)throw new \DomainException('quote_not_payable');
             if((int)$q['expires_at']<=time()){self::expireOne($q);throw new \DomainException('quote_expired');}
-            if(Plugin::mode()!=='standalone')throw new \DomainException('agah_reservation_api_required');
+            if(!Plugin::canSell())throw new \DomainException('agah_reservation_api_required');
             $order=wc_get_order($q['order_id']);if(!$order||$order->is_paid()||$order->has_status(['cancelled','refunded']))throw new \DomainException('order_not_payable');
             self::assertOrder($order,$q);
             $snapshot=json_decode($q['snapshot'],true);$grace=(int)($snapshot['payment_grace']??Plugin::settings()['payment_grace']);Stock::reserve($order,$grace);

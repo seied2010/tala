@@ -1,0 +1,15 @@
+{
+  "plugin": "Tala Demo Catalog",
+  "version": "1.0.0",
+  "validated_at_utc": "2026-11-15T11:39:30Z",
+  "environment": {"php": "8.5.12", "wordpress": "7.1.4", "woocommerce": "11.2.2", "hpos": true},
+  "catalog": {"groups": 9, "products": 27, "local_generated_images": 9, "prices": "FICTIONAL", "purchase_mode": "STANDARD_WOOCOMMERCE"},
+  "checks": [
+    {"name": "first_import", "expected": 27, "actual": 27, "status": "PASS"},
+    {"name": "idempotent_reimport", "expected_total": 27, "actual_total": 27, "status": "PASS"},
+    {"name": "all_products_purchasable_and_in_stock", "expected": 27, "actual": 27, "status": "PASS"},
+    {"name": "cart_and_checkout_url", "cart_items": 1, "product_price_irr": "185000000", "configured_shipping_irr": "100000", "cart_total_irr": "185100000", "status": "PASS"},
+    {"name": "scoped_removal", "expected_deleted": 27, "actual_deleted": 27, "remaining_demo_products": 0, "status": "PASS"}
+  ],
+  "notes": ["No payment gateway settings were changed.", "No real products were changed.", "Successful real payment depends on the destination store gateway configuration."]
+}

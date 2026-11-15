@@ -1,4 +1,4 @@
-# Test report — Gold Commerce 1.1.0
+# Test report — Gold Commerce 1.2.0
 
 Generated UTC: 2026-11-10T14:07:19.916525+00:00. Specification 1.1. Tests use synthetic data only.
 
@@ -7,6 +7,12 @@ Generated UTC: 2026-11-10T14:07:19.916525+00:00. Specification 1.1. Tests use sy
 WordPress 7.1.4, WooCommerce 11.2.2, Yoast 28.8; HPOS enabled. PHP 8.3.36 and 8.5.12; MariaDB 11.8.9. Classic checkout with Gold TEST_ONLY gateway. Two databases/stores and a third clean ZIP installation. See build-versions.json and docker-images.txt.
 
 PHP suites: 140 checks executed across the two runtimes; 140 passed, 0 failed. Each runtime includes 500 deterministic exact-arithmetic comparisons inside its unit suite. Counts are executed checks, not a project-completion percentage.
+
+## اعتبارسنجی تکمیلی نسخه ۱.۲.۰ و کاتالوگ نمونه
+
+در ۲۰۲۶-۱۱-۱۵، سورس هسته با ZIP ارسالی `gold-commerce-core-1.2.0.zip` با SHA-256 برابر `663ae7f9a2dba771afcf58de8606d23158bd897e6c1a07f4760f1f1c380c5ba4` تطبیق داده شد. مجموعه‌های PHP دوباره روی PHP 8.3.36 و 8.5.12، WordPress 7.1.4، WooCommerce 11.2.2 و HPOS اجرا شدند: در هر runtime تعداد ۱۱ واحد، ۴۳ یکپارچه‌سازی، ۸ امنیت و ۸ extended پاس شد؛ جمعاً ۱۴۰ پاس و صفر شکست در اجرای معتبر.
+
+افزونه `Tala Demo Catalog 1.0.0` نیز روی فروشگاه دورریختنی آزموده شد: ورود ۲۷ محصول، ورود مجدد بدون تکرار، خریدپذیری و موجودی همه ۲۷ قلم، افزودن یک محصول به سبد، محاسبه مبلغ و تولید URL تسویه، حذف ۲۷ محصول و حذف تصاویر متعلق به افزونه همگی PASS هستند. محصولات نمونه، کالای ساده WooCommerce هستند و موفقیت پرداخت واقعی همچنان به درگاه و تنظیمات سایت مقصد وابسته است. جزئیات ساختاریافته در `evidence/release-1.2.0-validation.json` و `evidence/demo-catalog.json` ثبت شده‌اند.
 
 ## Mandatory acceptance mapping
 
