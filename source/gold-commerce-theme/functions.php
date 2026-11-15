@@ -11,6 +11,10 @@ add_action('after_setup_theme',static function(){
     add_image_size('gc-card',600,720,true);
 });
 add_filter('woocommerce_placeholder_img_src',static fn($src)=>get_template_directory_uri().'/assets/jewel.svg');
+// Apply the visitor's saved appearance before styles render. New visitors always start in light mode.
+add_action('wp_head',static function(){
+    echo '<script id="gc-visitor-init">(function(){var r=document.documentElement,p={};try{p=JSON.parse(localStorage.getItem("gc-personalize")||"{}")||{};if(!p.theme){p.theme=localStorage.getItem("gc-theme")||"light";}}catch(e){p={theme:"light"};}r.dataset.theme=p.theme==="dark"?"dark":"light";if(/^#[0-9A-F]{6}$/i.test(p.accent||"")){r.style.setProperty("--accent",p.accent);}if(p.font==="system"){r.classList.add("gc-system-font");}if(p.size>=90&&p.size<=130&&p.size!==100){r.style.fontSize=p.size+"%";}try{var a=JSON.parse(localStorage.getItem("gc-a11y")||"[]");if(Array.isArray(a)&&a.length){r.dataset.a11y=a.join(" ");}}catch(e){}})();</script>';
+},1);
 add_action('wp_enqueue_scripts',static function(){
     $uri=get_template_directory_uri();$version=wp_get_theme()->get('Version');wp_enqueue_style('gc-theme',$uri.'/assets/theme.css',[],$version);wp_enqueue_style('gc-a11y',$uri.'/assets/accessibility.css',['gc-theme'],$version);wp_enqueue_script('gc-theme',$uri.'/assets/theme.js',[],$version,true);
     $accent=sanitize_hex_color(get_theme_mod('gc_accent','#a77735'))?:'#a77735';$background=sanitize_hex_color(get_theme_mod('gc_background','#faf8f3'))?:'#faf8f3';

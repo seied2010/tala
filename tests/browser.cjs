@@ -10,19 +10,21 @@ function assert(x,message){if(!x)throw new Error(message);}
   const context=await browser.newContext({viewport:{width:1440,height:1000}});const page=await context.newPage();page.on('pageerror',e=>errors.push({port,error:e.message}));
   const base='http://localhost:'+port;
   await check('T39.'+port+'.rtl_responsive_dark',async()=>{
-   await page.goto(base,{waitUntil:'networkidle'});assert(await page.locator('html').getAttribute('dir')==='rtl','RTL missing');
+   await page.goto(base,{waitUntil:'networkidle'});assert(await page.locator('html').getAttribute('dir')==='rtl','RTL missing');assert(await page.locator('html').getAttribute('data-theme')==='light','Default theme is not light');
    await page.screenshot({path:root+'/evidence/home-'+port+'-desktop.png',fullPage:true});
-   await page.locator('#gc-theme-toggle').click();assert(await page.locator('html').getAttribute('data-theme')==='dark','Dark mode failed');
+   await page.locator('#gc-personalize-toggle').click();await page.locator('#gc-theme-toggle').click();assert(await page.locator('html').getAttribute('data-theme')==='dark','Dark mode failed');
    await page.setViewportSize({width:360,height:800});await page.screenshot({path:root+'/evidence/home-'+port+'-mobile-dark.png',fullPage:true});
    assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),'Horizontal overflow at 360px');
    await page.locator('#gc-menu-toggle').click();assert(await page.locator('#gc-menu-toggle').getAttribute('aria-expanded')==='true','Menu inaccessible');
-   await page.locator('#gc-theme-toggle').click();await page.setViewportSize({width:1440,height:1000});
+   await page.locator('#gc-personalize-toggle').click();await page.locator('#gc-theme-light').click();await page.setViewportSize({width:1440,height:1000});
   });
   await check('T40.'+port+'.keyboard_and_controls',async()=>{
    await page.goto(base,{waitUntil:'networkidle'});await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.activeElement.classList.contains('gc-skip')),'Skip link not first');
-   await page.keyboard.press('Enter');await page.locator('#gc-access-toggle').click();assert(await page.locator('#gc-access-panel').isVisible(),'Readability controls hidden');
-   await page.locator('#gc-text-plus').click();assert(await page.locator('body').evaluate(e=>e.classList.contains('gc-large-text')),'Text size failed');await page.locator('#gc-text-reset').click();
+   await page.keyboard.press('Enter');await page.locator('#gc-access-toggle').click();assert(await page.locator('#gc-access-panel').isVisible(),'Accessibility controls hidden');
+   await page.locator('#gc-contrast').click();assert((await page.locator('html').getAttribute('data-a11y')||'').includes('contrast'),'High contrast failed');await page.locator('#gc-access-reset').click();
    await page.keyboard.press('Escape');assert(!await page.locator('#gc-access-panel').isVisible(),'Escape failed');
+   await page.locator('#gc-personalize-toggle').click();await page.locator('#gc-text-plus').click();assert(await page.locator('html').evaluate(e=>parseFloat(e.style.fontSize)>100),'Text size failed');await page.locator('#gc-personalize-reset').click();await page.keyboard.press('Escape');
+   await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight));await page.waitForTimeout(300);const boxes=await Promise.all(['#gc-personalize-toggle','#gc-access-toggle','#gc-back-to-top'].map(s=>page.locator(s).boundingBox()));const overlap=(a,b)=>a&&b&&a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y;assert(!overlap(boxes[0],boxes[1])&&!overlap(boxes[0],boxes[2])&&!overlap(boxes[1],boxes[2]),'Floating controls overlap');
   });
   await check('T37.'+port+'.classic_checkout_end_to_end',async()=>{
    await page.goto(base+'/?post_type=product&p=18',{waitUntil:'networkidle'});assert(await page.locator('button.single_add_to_cart_button').count()===1,'No buy action');

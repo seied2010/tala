@@ -1,4 +1,4 @@
-# Test report — Gold Commerce 1.2.0
+# Test report — Gold Commerce 1.2.1
 
 Generated UTC: 2026-11-10T14:07:19.916525+00:00. Specification 1.1. Tests use synthetic data only.
 
@@ -7,6 +7,10 @@ Generated UTC: 2026-11-10T14:07:19.916525+00:00. Specification 1.1. Tests use sy
 WordPress 7.1.4, WooCommerce 11.2.2, Yoast 28.8; HPOS enabled. PHP 8.3.36 and 8.5.12; MariaDB 11.8.9. Classic checkout with Gold TEST_ONLY gateway. Two databases/stores and a third clean ZIP installation. See build-versions.json and docker-images.txt.
 
 PHP suites: 140 checks executed across the two runtimes; 140 passed, 0 failed. Each runtime includes 500 deterministic exact-arithmetic comparisons inside its unit suite. Counts are executed checks, not a project-completion percentage.
+
+## اعتبارسنجی رابط بازدیدکننده نسخه ۱.۲.۱
+
+در ۲۰۲۶-۱۱-۱۵، دو پنل شناور «شخصی‌سازی صفحه» و «دسترس‌پذیری» روی هر دو فروشگاه PHP 8.3 و PHP 8.5 آزموده شدند. ۱۲ سناریوی اختصاصی شامل روشن‌بودن پیش‌فرض حتی با ترجیح تیره سیستم‌عامل، ماندگاری انتخاب، بازنشانی به روشن، رنگ/فونت/اندازه متن، چهار گزینه دسترس‌پذیری، Escape، نبود هم‌پوشانی در عرض ۱۴۴۰ و ۳۶۰ پیکسل و نبود خطای JavaScript همگی PASS شدند. اسکن axe در ۱۶ ترکیب صفحه/عرض/روشن-تیره نیز صفر نقض WCAG برگرداند. شواهد در `evidence/visitor-controls.json` و `evidence/accessibility.json` است.
 
 ## اعتبارسنجی تکمیلی نسخه ۱.۲.۰ و کاتالوگ نمونه
 

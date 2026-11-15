@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+Theme 1.2.0 adds separate floating visitor-personalization and accessibility panels inspired by the supplied Novin reference. New visitors start in light mode regardless of the operating-system color preference; explicit choices persist locally. Personalization covers light/dark mode, accent, readable font and text size. Accessibility covers high contrast, text spacing, reduced motion and readable font. The back-to-top control is vertically separated from personalization, while accessibility stays on the opposite side, including at 360px.
+
+No pricing, checkout, product, accounting or Agah behavior changed. Dedicated browser checks and 16 axe light/dark responsive scans pass.
+
 ## 1.1.0
 
 Initial implementation against the final 1.1 project specification: three independent WP packages, exact Gold component arithmetic, explicit rate/price policies and units, WC HPOS orders, scoped expiring quotes, one-use payment start, durable receipt/review handling, native stock holds/refunds, Persian customer/admin tools, report exports, modular theme and proposed Agah simulator/outbox/inbox.

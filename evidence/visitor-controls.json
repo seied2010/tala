@@ -1,0 +1,65 @@
+{
+  "at_utc": "2026-11-15T12:37:35.769Z",
+  "results": [
+    {
+      "test": "VISITOR.8081.light_default_and_persistence",
+      "status": "PASS",
+      "ms": 2089
+    },
+    {
+      "test": "VISITOR.8081.personalization_controls",
+      "status": "PASS",
+      "ms": 262
+    },
+    {
+      "test": "VISITOR.8081.accessibility_controls",
+      "status": "PASS",
+      "ms": 990
+    },
+    {
+      "test": "VISITOR.8081.no_overlap_1440",
+      "status": "PASS",
+      "ms": 1434
+    },
+    {
+      "test": "VISITOR.8081.no_overlap_360",
+      "status": "PASS",
+      "ms": 1012
+    },
+    {
+      "test": "VISITOR.8081.javascript_errors",
+      "status": "PASS",
+      "ms": 1
+    },
+    {
+      "test": "VISITOR.8082.light_default_and_persistence",
+      "status": "PASS",
+      "ms": 1816
+    },
+    {
+      "test": "VISITOR.8082.personalization_controls",
+      "status": "PASS",
+      "ms": 255
+    },
+    {
+      "test": "VISITOR.8082.accessibility_controls",
+      "status": "PASS",
+      "ms": 966
+    },
+    {
+      "test": "VISITOR.8082.no_overlap_1440",
+      "status": "PASS",
+      "ms": 1429
+    },
+    {
+      "test": "VISITOR.8082.no_overlap_360",
+      "status": "PASS",
+      "ms": 1033
+    },
+    {
+      "test": "VISITOR.8082.javascript_errors",
+      "status": "PASS",
+      "ms": 0
+    }
+  ]
+}
