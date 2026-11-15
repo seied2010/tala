@@ -1,12 +1,12 @@
 {
   "product": "Gold Commerce",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "specification": "Gold-Commerce-Development-Package-v1.1",
   "packages": [
     {
-      "file": "gold-commerce-theme-1.2.0.zip",
-      "bytes": 26652,
-      "sha256": "66be33c75e2dbf4de9ee8ef92d08f947f82df26c1e41ee946b94380d0083e0f9"
+      "file": "gold-commerce-theme-1.2.1.zip",
+      "bytes": 28152,
+      "sha256": "bf4ea6bd80aeddb4e02f32b742284fee998c12bd6225c606dcbf46f6d4ba9fa8"
     },
     {
       "file": "gold-commerce-core-1.2.0.zip",
@@ -39,7 +39,7 @@
     },
     {
       "file": "source/gold-commerce-theme/style.css",
-      "sha256": "4940c7baca64c6b90f5e6f41e99365632292e003da6be0a87768290b830a34d5"
+      "sha256": "9bdc5cfb3d60dff2960bb1161e565b8e64dc6dc518c509cda0823b634965b7eb"
     },
     {
       "file": "source/gold-commerce-theme/woocommerce.php",
@@ -47,7 +47,7 @@
     },
     {
       "file": "source/gold-commerce-theme/functions.php",
-      "sha256": "30b21a96dcf27cdd293cc6b85fc0e7d6f297693d38915e54ab768949a3ee88de"
+      "sha256": "8ad477861424ef132efb1a24f1c6a65743f53bd35915ef169237e8edfab224dc"
     },
     {
       "file": "source/gold-commerce-theme/page.php",
@@ -67,7 +67,7 @@
     },
     {
       "file": "source/gold-commerce-theme/footer.php",
-      "sha256": "adddbfea43ed0f9f784dcf0c8efe84d2f1b5ab4143b05ab3e88483e68ad33412"
+      "sha256": "87c8770d83981b5ae49a57719022630c60c547690c18ce6be212ecfac1c5d67d"
     },
     {
       "file": "source/gold-commerce-theme/front-page.php",
@@ -103,7 +103,7 @@
     },
     {
       "file": "source/gold-commerce-theme/assets/theme.js",
-      "sha256": "d60fcc1e1a6f3610873dd3b9db99df14340a8038f3054a546847b77886c39fb5"
+      "sha256": "29ed415d7db05b6bd31abc0e938d71128ca5e4e6ae6f4b0a5b63439d1e010add"
     },
     {
       "file": "source/gold-commerce-theme/assets/jewel.svg",
@@ -115,7 +115,7 @@
     },
     {
       "file": "source/gold-commerce-theme/assets/accessibility.css",
-      "sha256": "be40d9dd70dbc2eba830ebc990a990f8d827696551b8ee4ca03cbd021525334b"
+      "sha256": "bbe8ed6bd45c20b9f2164f3a208a3e55c64fc4fb4c52d9130b9c47998d31b64a"
     },
     {
       "file": "source/gold-commerce-core/guards/gold-commerce-guard.php",
@@ -571,7 +571,7 @@
     },
     {
       "file": "docs/TEST_REPORT.md",
-      "sha256": "6cf0b4d690e8a9cc346389be23b3a0e590262ecb109b26e6bedf9cae3f3d59d4"
+      "sha256": "66169a44e70e433ad59553e9d52b20353850bb75a62f1030334be4a018651efa"
     },
     {
       "file": "docs/CONFIGURATION.md",
@@ -591,7 +591,7 @@
     },
     {
       "file": "docs/CHANGELOG.md",
-      "sha256": "9e942b371b39584df5718c715b45e13fe7c7da1e29a38c734441948b4fbdeef8"
+      "sha256": "a6284a70615727cd0ae8c1f9c2c9610b9b32021e4143b8e8939703c2ec5ba75d"
     },
     {
       "file": "docs/API_CONTRACT_AGAH_v1_PROPOSED.md",
@@ -679,7 +679,7 @@
     },
     {
       "file": "tests/visitor-controls.cjs",
-      "sha256": "3b166f049173ab051336e29a59c302ee0261d4f55d53ac42fb55836656168e9a"
+      "sha256": "619d968a239b9886bba4922883c5954967cc1cea783717801f69d2f9549aae4b"
     },
     {
       "file": "tests/load.py",
@@ -787,7 +787,7 @@
     },
     {
       "file": "evidence/performance-lab.json",
-      "sha256": "4ef77a2ce61af3721863cbf552568b709a6bfa6abbe2419014d82c01a02e653e"
+      "sha256": "132db85795e8c1cf5632badfe850867a8503d8ec67d0221f9ed819ff29939547"
     },
     {
       "file": "evidence/security-php83.json",
@@ -815,7 +815,7 @@
     },
     {
       "file": "evidence/accessibility.json",
-      "sha256": "1c12b6b558c6e2b260056e923efbf5497c990dc8f766730166918be3c0f53be1"
+      "sha256": "1ae3bd624d0a1cb97cc5c654b9669ac3e3056e5b45a7245d2f7bb26db6fc4d38"
     },
     {
       "file": "evidence/checkout-8082.png",
@@ -871,7 +871,7 @@
     },
     {
       "file": "evidence/visitor-controls.json",
-      "sha256": "e6f450ca54f18df7279f9d6f8545a751fa6e864e50199cd6a434c3a72abe4a68"
+      "sha256": "1250a1a0538948cb8725a7c46f4c81b54cce5839f8f56c533b7ae84f3325e881"
     },
     {
       "file": "evidence/zip-install.json",
@@ -947,7 +947,7 @@
     },
     {
       "file": "tools/package.py",
-      "sha256": "92592dc66320c6807d921d789be06a148d839ef4d827a85f33daff4eaf50c4a6"
+      "sha256": "8a402b6a786ec46f262ee9cc81dc45331cb59662e618d59a165db65c4c015db4"
     },
     {
       "file": "tools/report.py",
@@ -969,9 +969,11 @@
   "agah_status": "MOCK_ONLY",
   "agah_reference_included": false,
   "theme": {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "default_scheme": "light",
     "visitor_personalization": true,
+    "sitewide_generated_palette": true,
+    "custom_color_picker": true,
     "accessibility_panel": true
   },
   "demo_catalog": {

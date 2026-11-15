@@ -1,23 +1,23 @@
 {
-  "at_utc": "2026-11-15T12:39:16.247Z",
+  "at_utc": "2026-11-15T12:58:57.773Z",
   "results": [
     {
       "width": 1440,
-      "lcp": 676,
+      "lcp": 504,
       "cls": 0,
-      "eventDuration": 48,
-      "ttfb": 245.39999999850988,
-      "bytes": 337772,
+      "eventDuration": 64,
+      "ttfb": 232.19999999925494,
+      "bytes": 342295,
       "status": "PASS",
       "scope": "Local Chromium lab sample, no network/CPU throttling. eventDuration is a sampled interaction duration, not field INP."
     },
     {
       "width": 390,
-      "lcp": 424,
+      "lcp": 328,
       "cls": 0,
       "eventDuration": 24,
-      "ttfb": 205.09999999776483,
-      "bytes": 337722,
+      "ttfb": 139.30000000074506,
+      "bytes": 342295,
       "status": "PASS",
       "scope": "Local Chromium lab sample, no network/CPU throttling. eventDuration is a sampled interaction duration, not field INP."
     }

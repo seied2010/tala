@@ -1,50 +1,50 @@
 {
-  "at_utc": "2026-11-15T12:37:35.769Z",
+  "at_utc": "2026-11-15T12:57:35.809Z",
   "results": [
     {
       "test": "VISITOR.8081.light_default_and_persistence",
       "status": "PASS",
-      "ms": 2089
+      "ms": 2196
     },
     {
       "test": "VISITOR.8081.personalization_controls",
       "status": "PASS",
-      "ms": 262
+      "ms": 1059
     },
     {
       "test": "VISITOR.8081.accessibility_controls",
       "status": "PASS",
-      "ms": 990
+      "ms": 996
     },
     {
       "test": "VISITOR.8081.no_overlap_1440",
       "status": "PASS",
-      "ms": 1434
+      "ms": 1430
     },
     {
       "test": "VISITOR.8081.no_overlap_360",
       "status": "PASS",
-      "ms": 1012
+      "ms": 1016
     },
     {
       "test": "VISITOR.8081.javascript_errors",
       "status": "PASS",
-      "ms": 1
+      "ms": 0
     },
     {
       "test": "VISITOR.8082.light_default_and_persistence",
       "status": "PASS",
-      "ms": 1816
+      "ms": 1856
     },
     {
       "test": "VISITOR.8082.personalization_controls",
       "status": "PASS",
-      "ms": 255
+      "ms": 960
     },
     {
       "test": "VISITOR.8082.accessibility_controls",
       "status": "PASS",
-      "ms": 966
+      "ms": 1028
     },
     {
       "test": "VISITOR.8082.no_overlap_1440",
@@ -54,7 +54,7 @@
     {
       "test": "VISITOR.8082.no_overlap_360",
       "status": "PASS",
-      "ms": 1033
+      "ms": 1001
     },
     {
       "test": "VISITOR.8082.javascript_errors",

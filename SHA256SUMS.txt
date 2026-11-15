@@ -1,6 +1,6 @@
-66be33c75e2dbf4de9ee8ef92d08f947f82df26c1e41ee946b94380d0083e0f9  gold-commerce-theme-1.2.0.zip
+bf4ea6bd80aeddb4e02f32b742284fee998c12bd6225c606dcbf46f6d4ba9fa8  gold-commerce-theme-1.2.1.zip
 4aa865c2b5b36b7119110505f97370723bbb0490a3cdfbad75b5bdfc6c20a9b8  gold-commerce-core-1.2.0.zip
 786325ee994439ecaf1e29dc3f3a3cbb584b0c24f0cc3e3d2762e33782b7e96b  gold-agah-connector-1.1.0.zip
 f371ca497fb5187cf951dc316a7eb445083f69faceacfb04824930647358503b  tala-demo-catalog-1.0.0.zip
-2e07a8e7b825f1536328c056688cfd6be72c3c5c4d4f68879cd4ecf5ff64868c  manifest.json
-fe6bdd4a7426ff110633621095d54113d6b1ffd9a0590e201b11636ba076bacf  Gold-Commerce-1.2.1-complete-delivery.zip
+15c16768bb75c31472d8820800d1ec2426fd19edf76253d55f1dae329ba761f2  manifest.json
+0d1f96c717f2e669d070448dd194190c45c9677070e883b0a4a96397e22ea78b  Gold-Commerce-1.2.2-complete-delivery.zip

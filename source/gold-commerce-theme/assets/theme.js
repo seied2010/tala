@@ -4,17 +4,24 @@
     const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch{return fallback;}};
     const write=(key,value)=>{try{if(value&&Object.keys(value).length)localStorage.setItem(key,JSON.stringify(value));else localStorage.removeItem(key);}catch{}};
     const fa=value=>String(value).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+    const paletteVars=['--accent','--dark','--accent-hover','--accent-text','--accent-soft','--accent-soft-2','--line','--paper','--card','--accent-on'];
+    const rgb=hex=>{const value=hex.slice(1);return[parseInt(value.slice(0,2),16),parseInt(value.slice(2,4),16),parseInt(value.slice(4,6),16)];};
+    const mix=(color,base,weight)=>{const a=rgb(color),b=rgb(base);return'#'+a.map((value,index)=>{const result=Math.round(b[index]+(value-b[index])*weight);return(result<16?'0':'')+result.toString(16);}).join('').toUpperCase();};
+    const contrastText=color=>{const [red,green,blue]=rgb(color);return(red*299+green*587+blue*114)/1000>150?'#000000':'#FFFFFF';};
+    const palette=(color,dark)=>{const background=dark?'#17231F':'#FAF8F3',card=dark?'#202F28':'#FFFDF8',deep=mix(color,'#000000',dark ? .62 : .45);return[color,deep,mix(color,'#000000',dark ? .76 : .56),mix(color,dark?'#FFFFFF':'#000000',dark ? .48 : .72),mix(color,background,dark ? .18 : .13),mix(color,background,dark ? .24 : .09),mix(color,dark?'#59645B':'#DEDBD2',.3),mix(color,background,dark ? .06 : .035),mix(color,card,dark ? .09 : .025),contrastText(deep)];};
     let prefs=read('gc-personalize',{});
     if(!['light','dark'].includes(prefs.theme)){try{prefs.theme=localStorage.getItem('gc-theme')==='dark'?'dark':'light';}catch{prefs.theme='light';}}
     let a11y=read('gc-a11y',[]);if(!Array.isArray(a11y))a11y=[];
 
     const applyPrefs=()=>{
         root.dataset.theme=prefs.theme==='dark'?'dark':'light';
-        if(/^#[0-9A-F]{6}$/i.test(prefs.accent||''))root.style.setProperty('--accent',prefs.accent);else root.style.removeProperty('--accent');
+        if(/^#[0-9A-F]{6}$/i.test(prefs.accent||'')){prefs.accent=prefs.accent.toUpperCase();palette(prefs.accent,root.dataset.theme==='dark').forEach((value,index)=>root.style.setProperty(paletteVars[index],value));}else paletteVars.forEach(property=>root.style.removeProperty(property));
         root.classList.toggle('gc-system-font',prefs.font==='system');
         const size=Number(prefs.size)||100;root.style.fontSize=size>=90&&size<=130&&size!==100?size+'%':'';
         document.querySelectorAll('[data-theme-value]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.themeValue===root.dataset.theme)));
         document.querySelectorAll('[data-font-value]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.fontValue===(prefs.font||'site'))));
+        document.querySelectorAll('[data-accent]').forEach(button=>button.setAttribute('aria-pressed',String((button.dataset.accent||'').toUpperCase()===(prefs.accent||''))));
+        const color=document.getElementById('gc-custom-color'),colorValue=document.getElementById('gc-custom-color-value'),selected=prefs.accent||'#A77735';if(color)color.value=selected;if(colorValue)colorValue.textContent=selected;
         const output=document.getElementById('gc-text-size');if(output)output.textContent=fa(size)+'٪';
         try{localStorage.setItem('gc-theme',root.dataset.theme);}catch{}
         write('gc-personalize',prefs);
@@ -39,6 +46,7 @@
 
         document.querySelectorAll('[data-theme-value]').forEach(button=>button.addEventListener('click',()=>{prefs.theme=button.dataset.themeValue;applyPrefs();}));
         document.querySelectorAll('[data-accent]').forEach(button=>button.addEventListener('click',()=>{if(button.dataset.accent)prefs.accent=button.dataset.accent;else delete prefs.accent;applyPrefs();}));
+        document.getElementById('gc-custom-color')?.addEventListener('input',event=>{prefs.accent=event.currentTarget.value.toUpperCase();applyPrefs();});
         document.querySelectorAll('[data-font-value]').forEach(button=>button.addEventListener('click',()=>{if(button.dataset.fontValue==='system')prefs.font='system';else delete prefs.font;applyPrefs();}));
         document.getElementById('gc-text-minus')?.addEventListener('click',()=>{prefs.size=Math.max(90,(Number(prefs.size)||100)-5);if(prefs.size===100)delete prefs.size;applyPrefs();});
         document.getElementById('gc-text-plus')?.addEventListener('click',()=>{prefs.size=Math.min(130,(Number(prefs.size)||100)+5);if(prefs.size===100)delete prefs.size;applyPrefs();});
